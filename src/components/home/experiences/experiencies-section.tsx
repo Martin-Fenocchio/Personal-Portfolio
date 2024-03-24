@@ -18,9 +18,8 @@ function ExperienciesSection() {
           <p>
             <strong>Líder de desarrollo</strong> de un equipo de programadores
             frontend, encargado de revisar Pull Requests y{" "}
-            <strong>tomar decisiones</strong>
-            técnicas, además de <strong>programar día a día</strong> con ambas
-            tecnologías.
+            <strong>tomar decisiones</strong> técnicas, además de{" "}
+            <strong>programar día a día</strong> con ambas tecnologías.
           </p>
         }
       />
