@@ -26,7 +26,7 @@ function Navbar(props: Props) {
       </h2>
 
       <div className="social-media">
-        <a href="https://github.com/Novak-Fenocchio" target="BLANK">
+        <a href="https://github.com/Martin-Fenocchio" target="BLANK">
           <img src={Github} alt="github" className="hover" />
         </a>
         <a

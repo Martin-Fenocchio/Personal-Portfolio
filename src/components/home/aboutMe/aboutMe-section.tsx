@@ -36,7 +36,7 @@ function AboutMeSection() {
             <SocialMediaItem
               text="GitHub"
               icon={Github}
-              url="https://github.com/Novak-Fenocchio"
+              url="https://github.com/Martin-Fenocchio"
             />
             <SocialMediaItem
               text="LinkedIn"
