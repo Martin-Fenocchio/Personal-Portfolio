@@ -1,6 +1,15 @@
 import "../../../assets/styles/projects.scss";
 import ProjectItem from "./project-item";
 import GuatapayPicture from "../../../assets/pictures/projects/guatapay-vision.webp";
+import AdamoPicture from "../../../assets/pictures/projects/adamo-vision.webp";
+import UposPicture from "../../../assets/pictures/projects/upos-vision.webp";
+import LimboScanPicture from "../../../assets/pictures/projects/limboscan-vision.webp";
+import CuyPicture from "../../../assets/pictures/projects/cuy-vision.webp";
+import FMoneyPicture from "../../../assets/pictures/projects/fmoney-vision.webp";
+import GuatapayWebPicture from "../../../assets/pictures/projects/guatapay-web-vision.webp";
+import DarxprexWebPicture from "../../../assets/pictures/projects/darxprex-web-vision.webp";
+import UposAdminPicture from "../../../assets/pictures/projects/upos-admin-vision.webp";
+import LimboXtractoPicture from "../../../assets/pictures/projects/limboxtractor-vision.webp";
 import FlutterIcon from "../../../assets/icons/flutter.svg";
 import { useState } from "react";
 
@@ -42,7 +51,7 @@ function ProjectsSection() {
           }
         />
         <ProjectItem
-          image={GuatapayPicture}
+          image={AdamoPicture}
           url=""
           title="Adamo ID"
           tags={[
@@ -69,7 +78,7 @@ function ProjectsSection() {
           }
         />
         <ProjectItem
-          image={GuatapayPicture}
+          image={UposPicture}
           url=""
           title="uPOS"
           tags={[
@@ -96,7 +105,7 @@ function ProjectsSection() {
           }
         />
         <ProjectItem
-          image={GuatapayPicture}
+          image={LimboScanPicture}
           url=""
           title="LimboScan"
           tags={[
@@ -125,7 +134,7 @@ function ProjectsSection() {
         {showMoreProjects && (
           <>
             <ProjectItem
-              image={GuatapayPicture}
+              image={CuyPicture}
               url=""
               title="Cuy"
               tags={[
@@ -150,35 +159,9 @@ function ProjectsSection() {
                 </p>
               }
             />
+
             <ProjectItem
-              image={GuatapayPicture}
-              url=""
-              title="Darxprex"
-              tags={[
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-              ]}
-              description={
-                <p>
-                  Send <strong>remittances</strong> from Latin America, send and
-                  receive <strong>any currency</strong>, upload receipts, verify
-                  identity, preview <strong>exchange rates</strong> and send
-                  money to relatives.
-                </p>
-              }
-            />
-            <ProjectItem
-              image={GuatapayPicture}
+              image={FMoneyPicture}
               url=""
               title="FMoney"
               tags={[
@@ -204,7 +187,7 @@ function ProjectsSection() {
               }
             />
             <ProjectItem
-              image={GuatapayPicture}
+              image={GuatapayWebPicture}
               url=""
               title="Guatapay Platform"
               tags={[
@@ -230,7 +213,7 @@ function ProjectsSection() {
               }
             />
             <ProjectItem
-              image={GuatapayPicture}
+              image={DarxprexWebPicture}
               url=""
               title="Darxprex Web"
               tags={[
@@ -256,7 +239,7 @@ function ProjectsSection() {
               }
             />
             <ProjectItem
-              image={GuatapayPicture}
+              image={UposAdminPicture}
               url=""
               title="uPOS admin"
               tags={[
@@ -281,7 +264,7 @@ function ProjectsSection() {
               }
             />
             <ProjectItem
-              image={GuatapayPicture}
+              image={LimboXtractoPicture}
               url=""
               title="LimboXtractor"
               tags={[
@@ -302,58 +285,6 @@ function ProjectsSection() {
                 <p>
                   Practical app made to extract data such as CBU, DNI, phone
                   numbers, coordinates, and more.
-                </p>
-              }
-            />
-            <ProjectItem
-              image={GuatapayPicture}
-              url=""
-              title="Star wars app"
-              tags={[
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-              ]}
-              description={
-                <p>
-                  App intended to be a Wiki about all the characters of the Star
-                  Wars saga, you can read their features, images, powers, ships,
-                  etc..
-                </p>
-              }
-            />
-            <ProjectItem
-              image={GuatapayPicture}
-              url=""
-              title="Pokedéx"
-              tags={[
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-              ]}
-              description={
-                <p>
-                  App intended to be a Wiki about all the Pokemon anime
-                  characters, you can read their characteristics, images,
-                  powers, ships, etc...
                 </p>
               }
             />
