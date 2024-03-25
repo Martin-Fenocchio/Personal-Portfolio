@@ -19,11 +19,14 @@ function LibraryItem({ npmJSPackage, ...props }: Props) {
           {props.description}
           <button>
             Ver en {npmJSPackage ? "NPM" : "PUB"}{" "}
-            <img src={npmJSPackage ? NPMIcon : PubIcon} alt="pub-dev-icon" />
+            <img
+              src={npmJSPackage ? NPMIcon : PubIcon}
+              alt="library platform icon"
+            />
           </button>
         </div>
         <div className="right">
-          <img src={props.image} alt={props.title} />
+          <img src={props.image} alt="library image" />
         </div>
       </article>
     </a>

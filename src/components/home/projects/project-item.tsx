@@ -13,7 +13,7 @@ function ProjectItem(props: ProjectItemProps) {
   return (
     <a href={props.url} target="BLANK">
       <article className="project-item">
-        <img src={props.image} alt={props.title} />
+        <img src={props.image} alt="project image" />
 
         <h3>{props.title}</h3>
         {props.description}

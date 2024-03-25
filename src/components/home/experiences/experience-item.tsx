@@ -14,7 +14,7 @@ function ExperienceItem(props: Props) {
     <article className="max-w-content m-auto mb-12 experience-item">
       <div className="left flex flex-col items-center gap-4">
         <div className="calendar">
-          <img src={CalendarIcon} alt="calendar-icon" />
+          <img src={CalendarIcon} alt="calendar icon" />
         </div>
         <div className="yellow-line" />
       </div>
@@ -23,7 +23,7 @@ function ExperienceItem(props: Props) {
           {props.title} <span className="separator px-1 text-white">-</span>{" "}
           <span className="company text-yellow ">{props.company}</span>
         </h3>
-        <h6 className="text-darkGreen">{props.date}</h6>
+        <h4 className="text-darkGreen">{props.date}</h4>
         {props.description}
         <a
           href={props.url}

@@ -6,7 +6,7 @@ export interface ITag {
 function TagItem(props: ITag) {
   return (
     <p className="tag-item">
-      {props.text} <img src={props.image} alt={props.text} />
+      {props.text} <img src={props.image} alt="tech icon" />
     </p>
   );
 }
