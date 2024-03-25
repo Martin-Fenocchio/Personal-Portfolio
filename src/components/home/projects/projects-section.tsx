@@ -18,7 +18,7 @@ import ReactIcon from "../../../assets/icons/react.svg";
 import ReduxIcon from "../../../assets/icons/redux.svg";
 import ScssIcon from "../../../assets/icons/scss.svg";
 import TailwindIcon from "../../../assets/icons/tailwind.svg";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function ProjectsSection() {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
