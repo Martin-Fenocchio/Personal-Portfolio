@@ -37,7 +37,7 @@ function BlogsSection() {
         description={
           <p>
             In this blog I share a <strong>simple script coded</strong> by me to{" "}
-            <strong>increase</strong> the <strong>version number</strong> on
+            <strong>increase</strong> the <strong>version number</strong> on{" "}
             <strong>each commit</strong>, saving us time.
           </p>
         }

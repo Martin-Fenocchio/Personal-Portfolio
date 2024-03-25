@@ -45,7 +45,7 @@ function ExperienciesSection() {
         description={
           <p>
             First steps in my professional career, I developed as a trainee dev
-            at the <strong>startup Nuwe</strong>, a tech event organizer, using
+            at the <strong>startup Nuwe</strong>, a tech event organizer, using{" "}
             <strong>React JS</strong> and <strong>Next JS</strong>.
           </p>
         }

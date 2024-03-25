@@ -23,7 +23,7 @@ function LibrariesSection() {
         url="https://pub.dev/packages/universal_picture"
         description={
           <p>
-            A versatile <strong>Flutter library</strong> for rendering images
+            A versatile <strong>Flutter library</strong> for rendering images{" "}
             <strong>regardless</strong> of their <strong>format</strong> or
             source. This widget simplifies the process of loading and{" "}
             <strong>displaying images</strong>.

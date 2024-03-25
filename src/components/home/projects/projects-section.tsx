@@ -30,6 +30,13 @@ function ProjectsSection() {
     >
       <h2>Projects</h2>
 
+      <p>
+        Throughout my professional career, I've had the privilege of
+        contributing to a variety of projects. In several of them, I took on the
+        responsibility of leading the frontend development. Below are some
+        examples:
+      </p>
+
       <div className="grid">
         <ProjectItem
           image={GuatapayPicture}
@@ -79,7 +86,7 @@ function ProjectsSection() {
           description={
             <p>
               <strong>Digital signatures</strong> and{" "}
-              <strong>identity verifications</strong>, <strong>lead</strong> the
+              <strong>identity verifications</strong>, <strong>lead</strong> the{" "}
               <strong>front-end</strong> both the app and the web part, Using{" "}
               <strong>Flutter Web</strong> and React JS
             </p>
