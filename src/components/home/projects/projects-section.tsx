@@ -40,7 +40,7 @@ function ProjectsSection() {
       <div className="grid">
         <ProjectItem
           image={GuatapayPicture}
-          url=""
+          url="https://play.google.com/store/apps/details?id=com.guatapay.guatapay&pcampaignid=web_share"
           title="Guatapay"
           tags={[
             {
@@ -67,7 +67,7 @@ function ProjectsSection() {
         />
         <ProjectItem
           image={AdamoPicture}
-          url=""
+          url="https://adamo-client-qa.limboteams.com/"
           title="Adamo ID"
           tags={[
             {
@@ -94,7 +94,7 @@ function ProjectsSection() {
         />
         <ProjectItem
           image={GuatapayWebPicture}
-          url=""
+          url="https://guatapay.com/"
           title="Guatapay Platform"
           tags={[
             {
@@ -121,7 +121,7 @@ function ProjectsSection() {
 
         <ProjectItem
           image={DarxprexWebPicture}
-          url=""
+          url="https://darxprex.com/"
           title="Darxprex Web"
           tags={[
             {
@@ -150,8 +150,8 @@ function ProjectsSection() {
           <>
             <ProjectItem
               image={UposPicture}
-              url=""
               title="uPOS"
+              url="https://play.google.com/store/apps/details?id=com.universalpos"
               tags={[
                 {
                   text: "Flutter",
@@ -178,7 +178,6 @@ function ProjectsSection() {
 
             <ProjectItem
               image={FMoneyPicture}
-              url=""
               title="FMoney"
               tags={[
                 {
@@ -205,7 +204,7 @@ function ProjectsSection() {
 
             <ProjectItem
               image={CuyPicture}
-              url=""
+              url="https://cambios-uruguay-client.limboteams.com/"
               title="Cuy"
               tags={[
                 {
@@ -232,7 +231,7 @@ function ProjectsSection() {
 
             <ProjectItem
               image={LimboScanPicture}
-              url=""
+              url="https://play.google.com/store/apps/details?id=com.limboscan.limboscan"
               title="LimboScan"
               tags={[
                 {
@@ -256,7 +255,6 @@ function ProjectsSection() {
 
             <ProjectItem
               image={LimboXtractoPicture}
-              url=""
               title="LimboXtractor"
               tags={[
                 {
@@ -278,7 +276,7 @@ function ProjectsSection() {
 
             <ProjectItem
               image={UposAdminPicture}
-              url=""
+              url="https://play.google.com/store/apps/details?id=com.universalpos"
               title="uPOS admin"
               tags={[
                 {
