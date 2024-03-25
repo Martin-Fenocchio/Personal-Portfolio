@@ -7,7 +7,7 @@ import "../../../assets/styles/about-me.scss";
 
 function AboutMeSection() {
   return (
-    <div className="about-me-section  h-full gradient">
+    <section className="about-me-section  h-full gradient">
       <div className="h-[90%] about_me_section flex flex-column items-center  ">
         <div className="width-container">
           <h1 className="text-white">
@@ -58,7 +58,7 @@ function AboutMeSection() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

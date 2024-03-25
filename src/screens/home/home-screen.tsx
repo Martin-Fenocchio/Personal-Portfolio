@@ -8,7 +8,7 @@ import BurgerMenu from "../../components/layout/burger-menu/burger-menu";
 
 function HomeScreen() {
   return (
-    <div className="f-width h-full">
+    <main className="f-width h-full">
       <div className="line" />
       <Navbar />
       <BurgerMenu />
@@ -17,7 +17,7 @@ function HomeScreen() {
       <ProjectsSection />
       <LibrariesSection />
       <BlogsSection />
-    </div>
+    </main>
   );
 }
 
