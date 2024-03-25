@@ -11,24 +11,25 @@ function AboutMeSection() {
       <div className="h-[90%] about_me_section flex flex-column items-center  ">
         <div className="width-container">
           <h1 className="text-white">
-            Hola, <span>soy Martín.</span>
+            Hi, <span>I'm Martín.</span>
           </h1>
           <h2 className="text-white">Flutter & React dev</h2>
+
           <p className="text-white">
             <span className="green">
               {" "}
-              <strong>+3 años</strong>
+              <strong>+3 years</strong>
             </span>{" "}
-            de experiencia. Desarrollador de apps y páginas Web.{" "}
-            <span className="green">Especializado</span> en{" "}
+            of experience. App and web developer.{" "}
+            <span className="green">Specialized</span> in{" "}
             <span className="green">
-              <strong>Flutter</strong> y <strong>React JS</strong>
+              <strong>Flutter</strong> and <strong>React JS</strong>
             </span>
-            . Creador de{" "}
+            . Creator of <br />
             <span className="yellow">
-              librerías <strong>open source</strong>
+              <strong>open source</strong> libraries
             </span>{" "}
-            y <span className="yellow">apasionado</span> de la tecnología.
+            and <span className="yellow">passionate</span> about technology.
           </p>
 
           <div className="grid-media flex gap-3 mt-7">
@@ -53,7 +54,7 @@ function AboutMeSection() {
             href="#experience-section"
             className="experience flex items-center animate-bounce hover"
           >
-            Experiencia <img src={Arrow} alt="icon" className="w-10" />
+            Experience <img src={Arrow} alt="icon" className="w-10" />
           </a>
         </div>
       </div>

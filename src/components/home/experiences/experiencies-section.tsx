@@ -10,44 +10,43 @@ function ExperienciesSection() {
       <h2>Experience</h2>
 
       <ExperienceItem
-        title="Programador Flutter y React JS"
+        title="Flutter and React JS developer"
         company="LimboTeams"
-        date="Julio 2021 - Presente"
+        date="July 2021 - Present"
         url="https://limboteams.com"
         description={
           <p>
-            <strong>Líder de desarrollo</strong> de un equipo de programadores
-            frontend, encargado de revisar Pull Requests y{" "}
-            <strong>tomar decisiones</strong> técnicas, además de{" "}
-            <strong>programar día a día</strong> con ambas tecnologías.
+            <strong>Development leader</strong> of a team of frontend
+            programmers, in charge of reviewing Pull Requests and{" "}
+            <strong>making technical decisions</strong>, in addition to
+            <strong> day-to-day programming</strong> with both technologies.
           </p>
         }
       />
       <ExperienceItem
-        title="Programador React JS"
+        title="React JS developer"
         company="ImCreate"
-        date="Febrero 2021 - Julio 2021"
+        date="February 2021 - July 2021"
         url="https://imcreatestudios.com"
         description={
           <p>
-            Desarrollador Frontend en <strong>e-commerce</strong> hecha con
-            <strong> React JS</strong>, conectando{" "}
-            <strong>pasarelas de pagos</strong>, diversas <strong>API</strong>
-            ’s, diseño <strong>responsive</strong> y más.
+            Frontend developer in <strong>e-commerce</strong> made with{" "}
+            <strong>React JS</strong>, connecting{" "}
+            <strong>payment gateways</strong>, various <strong>API</strong>'s,
+            responsive design and more.
           </p>
         }
       />
       <ExperienceItem
-        title="Desarrollador Trainee"
+        title="Trainee developer"
         company="Nuwe"
-        date="Diciembre 2020 - Febrero 2021"
+        date="December 2020 - February 2021"
         url="https://nuwe.io"
         description={
           <p>
-            Primeros pasos en mi carrera profesional, desarrolle como trainee
-            dev en la <strong>startup</strong> Nuwe, una organizadora de eventos
-            tech, utilizando <strong>React JS</strong> y{" "}
-            <strong>Next JS</strong>.
+            First steps in my professional career, I developed as a trainee dev
+            at the <strong>startup Nuwe</strong>, a tech event organizer, using
+            <strong>React JS</strong> and <strong>Next JS</strong>.
           </p>
         }
       />

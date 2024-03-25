@@ -51,9 +51,10 @@ function ProjectsSection() {
           ]}
           description={
             <p>
-              Billetera <strong>crypto</strong>, recibe y envía{" "}
-              <strong>Bitcoin</strong> a quien desees, hecha en Flutter,{" "}
-              <strong>lideré el desarrollo FrontEnd</strong> en este proyecto.
+              <strong>Crypto wallet</strong>, receive and send Bitcoin to
+              whomever you want, made in Flutter,{" "}
+              <strong>I leaded the FrontEnd development</strong> in this
+              project.
             </p>
           }
         />
