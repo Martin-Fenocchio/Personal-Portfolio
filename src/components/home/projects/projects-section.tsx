@@ -11,7 +11,14 @@ import DarxprexWebPicture from "../../../assets/pictures/projects/darxprex-web-v
 import UposAdminPicture from "../../../assets/pictures/projects/upos-admin-vision.webp";
 import LimboXtractoPicture from "../../../assets/pictures/projects/limboxtractor-vision.webp";
 import FlutterIcon from "../../../assets/icons/flutter.svg";
-import { useState } from "react";
+import BlocIcon from "../../../assets/icons/bloc.webp";
+import FirebaseIcon from "../../../assets/icons/firebase.svg";
+import ProviderIcon from "../../../assets/icons/provider.svg";
+import ReactIcon from "../../../assets/icons/react.svg";
+import ReduxIcon from "../../../assets/icons/redux.svg";
+import ScssIcon from "../../../assets/icons/scss.svg";
+import TailwindIcon from "../../../assets/icons/tailwind.svg";
+import React, { useState } from "react";
 
 function ProjectsSection() {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
@@ -34,12 +41,12 @@ function ProjectsSection() {
               image: FlutterIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Bloc",
+              image: BlocIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Firebase",
+              image: FirebaseIcon,
             },
           ]}
           description={
@@ -60,73 +67,73 @@ function ProjectsSection() {
               image: FlutterIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Firebase",
+              image: FirebaseIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Bloc",
+              image: BlocIcon,
             },
           ]}
           description={
             <p>
               <strong>Digital signatures</strong> and{" "}
               <strong>identity verifications</strong>, <strong>lead</strong> the
-              <strong>front-end</strong> both the app and the web part, Using
+              <strong>front-end</strong> both the app and the web part, Using{" "}
               <strong>Flutter Web</strong> and React JS
             </p>
           }
         />
         <ProjectItem
-          image={UposPicture}
+          image={GuatapayWebPicture}
           url=""
-          title="uPOS"
+          title="Guatapay Platform"
           tags={[
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "React",
+              image: ReactIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Context",
+              image: ReduxIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "SCSS",
+              image: ScssIcon,
             },
           ]}
           description={
             <p>
-              Point of sale system for restaurants, made with{" "}
-              <strong>Flutter</strong>, with a{" "}
-              <strong>mobile app and a web</strong>. Manage employees, dishes,
-              statistics and more.
+              Platform that <strong>allows e-commerces</strong> to{" "}
+              <strong>accept and receive cryptocurrency payments</strong> by
+              installing a small add-on in their store.
             </p>
           }
         />
+
         <ProjectItem
-          image={LimboScanPicture}
+          image={DarxprexWebPicture}
           url=""
-          title="LimboScan"
+          title="Darxprex Web"
           tags={[
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "React",
+              image: ReactIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Context",
+              image: ScssIcon,
             },
             {
-              text: "Flutter",
-              image: FlutterIcon,
+              text: "Tailwind",
+              image: TailwindIcon,
             },
           ]}
           description={
             <p>
-              <strong>QR code scanner app</strong>, designed to be as{" "}
-              <strong>fast</strong> as possible and <strong>without ads</strong>
-              .
+              Web platform for Darxprex app{" "}
+              <strong>workers to manage their customers</strong>, place orders,
+              track revenue and more.
             </p>
           }
         />
@@ -134,21 +141,76 @@ function ProjectsSection() {
         {showMoreProjects && (
           <>
             <ProjectItem
-              image={CuyPicture}
+              image={UposPicture}
               url=""
-              title="Cuy"
+              title="uPOS"
               tags={[
                 {
                   text: "Flutter",
                   image: FlutterIcon,
                 },
                 {
-                  text: "Flutter",
-                  image: FlutterIcon,
+                  text: "Firebase",
+                  image: FirebaseIcon,
                 },
                 {
-                  text: "Flutter",
-                  image: FlutterIcon,
+                  text: "Provider",
+                  image: ProviderIcon,
+                },
+              ]}
+              description={
+                <p>
+                  Point of sale system for restaurants, made with{" "}
+                  <strong>Flutter</strong>, with a{" "}
+                  <strong>mobile app and a web</strong>. Manage employees,
+                  dishes, statistics and more.
+                </p>
+              }
+            />
+
+            <ProjectItem
+              image={FMoneyPicture}
+              url=""
+              title="FMoney"
+              tags={[
+                {
+                  text: "React",
+                  image: ReactIcon,
+                },
+                {
+                  text: "Redux",
+                  image: ReduxIcon,
+                },
+                {
+                  text: "SCSS",
+                  image: ScssIcon,
+                },
+              ]}
+              description={
+                <p>
+                  <strong>Cryptographic</strong> lottery/lottery platform,
+                  allows the purchase of <strong>cryptographic tickets</strong>{" "}
+                  and win prizes on the platform's <strong>own token</strong>.
+                </p>
+              }
+            />
+
+            <ProjectItem
+              image={CuyPicture}
+              url=""
+              title="Cuy"
+              tags={[
+                {
+                  text: "React",
+                  image: ReactIcon,
+                },
+                {
+                  text: "Context",
+                  image: ReduxIcon,
+                },
+                {
+                  text: "Tailwind",
+                  image: TailwindIcon,
                 },
               ]}
               description={
@@ -161,108 +223,29 @@ function ProjectsSection() {
             />
 
             <ProjectItem
-              image={FMoneyPicture}
+              image={LimboScanPicture}
               url=""
-              title="FMoney"
+              title="LimboScan"
               tags={[
                 {
                   text: "Flutter",
                   image: FlutterIcon,
                 },
+
                 {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
+                  text: "Bloc",
+                  image: BlocIcon,
                 },
               ]}
               description={
                 <p>
-                  <strong>Cryptographic</strong> lottery/lottery platform,
-                  allows the purchase of <strong>cryptographic tickets</strong>{" "}
-                  and win prizes on the platform's <strong>own token</strong>.
+                  <strong>QR code scanner app</strong>, designed to be as{" "}
+                  <strong>fast</strong> as possible and{" "}
+                  <strong>without ads</strong>.
                 </p>
               }
             />
-            <ProjectItem
-              image={GuatapayWebPicture}
-              url=""
-              title="Guatapay Platform"
-              tags={[
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-              ]}
-              description={
-                <p>
-                  Platform that <strong>allows e-commerces</strong> to{" "}
-                  <strong>accept and receive cryptocurrency payments</strong> by
-                  installing a small add-on in their store.
-                </p>
-              }
-            />
-            <ProjectItem
-              image={DarxprexWebPicture}
-              url=""
-              title="Darxprex Web"
-              tags={[
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-              ]}
-              description={
-                <p>
-                  Web platform for Darxprex app{" "}
-                  <strong>workers to manage their customers</strong>, place
-                  orders, track revenue and more.
-                </p>
-              }
-            />
-            <ProjectItem
-              image={UposAdminPicture}
-              url=""
-              title="uPOS admin"
-              tags={[
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-              ]}
-              description={
-                <p>
-                  Web platform for distributors of the uPOS app, allows to add
-                  and manage customers.
-                </p>
-              }
-            />
+
             <ProjectItem
               image={LimboXtractoPicture}
               url=""
@@ -273,18 +256,40 @@ function ProjectsSection() {
                   image: FlutterIcon,
                 },
                 {
-                  text: "Flutter",
-                  image: FlutterIcon,
-                },
-                {
-                  text: "Flutter",
-                  image: FlutterIcon,
+                  text: "Bloc",
+                  image: BlocIcon,
                 },
               ]}
               description={
                 <p>
                   Practical app made to extract data such as CBU, DNI, phone
                   numbers, coordinates, and more.
+                </p>
+              }
+            />
+
+            <ProjectItem
+              image={UposAdminPicture}
+              url=""
+              title="uPOS admin"
+              tags={[
+                {
+                  text: "React",
+                  image: ReactIcon,
+                },
+                {
+                  text: "Context",
+                  image: ReduxIcon,
+                },
+                {
+                  text: "SCSS",
+                  image: ScssIcon,
+                },
+              ]}
+              description={
+                <p>
+                  Web platform for distributors of the uPOS app, allows to add
+                  and manage customers.
                 </p>
               }
             />

@@ -39,7 +39,7 @@
     footer {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 0.7rem;
       margin-top: 1.5rem;
 
       .tag-item {
@@ -50,8 +50,8 @@
         padding: 0.3rem 0.5rem;
         font-size: 0.8rem;
         > img {
-          margin-left: 0.5rem;
-          width: 0.8rem;
+          margin-left: 0.3rem;
+          width: 0.85rem;
         }
       }
     }
