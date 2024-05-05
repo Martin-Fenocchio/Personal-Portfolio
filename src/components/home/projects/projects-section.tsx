@@ -304,7 +304,7 @@ function ProjectsSection() {
       </div>
 
       <button
-        className="border-yellow border-2 border-solid rounded-xl w-[50%] py-2 ml-[25%] mt-12 text-yellow font-bold"
+        className="border-yellow border-2 border-solid rounded-xl w-[60%] py-2  ml-[20%] mt-12 text-yellow font-bold"
         onClick={() => setShowMoreProjects(!showMoreProjects)}
       >
         Show {showMoreProjects ? "less" : "more"} projects

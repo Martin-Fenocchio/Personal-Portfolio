@@ -11,7 +11,7 @@
       }
     }
 
-    > p {
+    >p {
       font-size: 1rem;
       padding-right: 3rem;
       margin-top: 2rem;
@@ -19,12 +19,20 @@
 
     .grid-media {
       flex-wrap: wrap;
+
       .github {
         flex: 0 1 30%;
       }
 
       .linkedin {
         flex: 0 0 30%;
+
+        @media (max-width: 400px) {
+          p {
+
+            padding-right: 15px;
+          }
+        }
       }
 
       a:last-child {
