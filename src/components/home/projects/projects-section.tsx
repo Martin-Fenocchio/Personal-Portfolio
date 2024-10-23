@@ -14,6 +14,7 @@ import FlutterIcon from "../../../assets/icons/flutter.svg";
 import BlocIcon from "../../../assets/icons/bloc.webp";
 import FirebaseIcon from "../../../assets/icons/firebase.svg";
 import ProviderIcon from "../../../assets/icons/provider.svg";
+import MenteRapida from "../../../assets/pictures/projects/rapidamente.webp";
 import ReactIcon from "../../../assets/icons/react.svg";
 import ReduxIcon from "../../../assets/icons/redux.svg";
 import ScssIcon from "../../../assets/icons/scss.svg";
@@ -37,34 +38,36 @@ function ProjectsSection() {
         examples:
       </p>
 
-      <div className="grid">
-        <ProjectItem
-          image={GuatapayPicture}
-          url="https://play.google.com/store/apps/details?id=com.guatapay.guatapay&pcampaignid=web_share"
-          title="Guatapay"
-          tags={[
-            {
-              text: "Flutter",
-              image: FlutterIcon,
-            },
-            {
-              text: "Bloc",
-              image: BlocIcon,
-            },
-            {
-              text: "Firebase",
-              image: FirebaseIcon,
-            },
-          ]}
-          description={
-            <p>
-              <strong>Crypto wallet</strong>, receive and send Bitcoin to
-              whomever you want, made in Flutter,{" "}
-              <strong>I leaded the FrontEnd development</strong> in this
-              project.
-            </p>
+      <ProjectItem
+        image={MenteRapida}
+        url="/rapidamente"
+        title="MenteRapida"
+        tags={[
+          {
+            text: "React",
+            image: ReactIcon
+          },
+          {
+            text: "Redux",
+            image: ReduxIcon
+          },
+          {
+            text: "SCSS",
+            image: ScssIcon
           }
-        />
+        ]}
+        description={
+          <p>
+            A <strong>mini-game</strong> with a{" "}
+            <strong>dailly mathematic challenge</strong>, similar to wordle and
+            similars.
+          </p>
+        }
+      />
+
+      <div className="mb-5" />
+
+      <div className="grid">
         <ProjectItem
           image={AdamoPicture}
           url="https://adamo-client-qa.limboteams.com/"
@@ -72,16 +75,16 @@ function ProjectsSection() {
           tags={[
             {
               text: "Flutter",
-              image: FlutterIcon,
+              image: FlutterIcon
             },
             {
               text: "Firebase",
-              image: FirebaseIcon,
+              image: FirebaseIcon
             },
             {
               text: "Bloc",
-              image: BlocIcon,
-            },
+              image: BlocIcon
+            }
           ]}
           description={
             <p>
@@ -94,27 +97,53 @@ function ProjectsSection() {
         />
         <ProjectItem
           image={GuatapayWebPicture}
-          url="https://guatapay.com/"
           title="Guatapay Platform"
           tags={[
             {
               text: "React",
-              image: ReactIcon,
+              image: ReactIcon
             },
             {
               text: "Context",
-              image: ReduxIcon,
+              image: ReduxIcon
             },
             {
               text: "SCSS",
-              image: ScssIcon,
-            },
+              image: ScssIcon
+            }
           ]}
           description={
             <p>
               Platform that <strong>allows e-commerces</strong> to{" "}
               <strong>accept and receive cryptocurrency payments</strong> by
-              installing a small add-on in their store.
+              installing a add-on in their store.
+            </p>
+          }
+        />
+
+        <ProjectItem
+          image={GuatapayPicture}
+          title="Guatapay"
+          tags={[
+            {
+              text: "Flutter",
+              image: FlutterIcon
+            },
+            {
+              text: "Bloc",
+              image: BlocIcon
+            },
+            {
+              text: "Firebase",
+              image: FirebaseIcon
+            }
+          ]}
+          description={
+            <p>
+              <strong>Crypto wallet</strong>, receive and send Bitcoin to
+              whomever you want, made in Flutter,{" "}
+              <strong>I leaded the FrontEnd development</strong> in this
+              project.
             </p>
           }
         />
@@ -126,16 +155,16 @@ function ProjectsSection() {
           tags={[
             {
               text: "React",
-              image: ReactIcon,
+              image: ReactIcon
             },
             {
               text: "Context",
-              image: ScssIcon,
+              image: ScssIcon
             },
             {
               text: "Tailwind",
-              image: TailwindIcon,
-            },
+              image: TailwindIcon
+            }
           ]}
           description={
             <p>
@@ -151,20 +180,19 @@ function ProjectsSection() {
             <ProjectItem
               image={UposPicture}
               title="uPOS"
-              url="https://play.google.com/store/apps/details?id=com.universalpos"
               tags={[
                 {
                   text: "Flutter",
-                  image: FlutterIcon,
+                  image: FlutterIcon
                 },
                 {
                   text: "Firebase",
-                  image: FirebaseIcon,
+                  image: FirebaseIcon
                 },
                 {
                   text: "Provider",
-                  image: ProviderIcon,
-                },
+                  image: ProviderIcon
+                }
               ]}
               description={
                 <p>
@@ -182,16 +210,16 @@ function ProjectsSection() {
               tags={[
                 {
                   text: "React",
-                  image: ReactIcon,
+                  image: ReactIcon
                 },
                 {
                   text: "Redux",
-                  image: ReduxIcon,
+                  image: ReduxIcon
                 },
                 {
                   text: "SCSS",
-                  image: ScssIcon,
-                },
+                  image: ScssIcon
+                }
               ]}
               description={
                 <p>
@@ -209,16 +237,16 @@ function ProjectsSection() {
               tags={[
                 {
                   text: "React",
-                  image: ReactIcon,
+                  image: ReactIcon
                 },
                 {
                   text: "Context",
-                  image: ReduxIcon,
+                  image: ReduxIcon
                 },
                 {
                   text: "Tailwind",
-                  image: TailwindIcon,
-                },
+                  image: TailwindIcon
+                }
               ]}
               description={
                 <p>
@@ -231,18 +259,17 @@ function ProjectsSection() {
 
             <ProjectItem
               image={LimboScanPicture}
-              url="https://play.google.com/store/apps/details?id=com.limboscan.limboscan"
               title="LimboScan"
               tags={[
                 {
                   text: "Flutter",
-                  image: FlutterIcon,
+                  image: FlutterIcon
                 },
 
                 {
                   text: "Bloc",
-                  image: BlocIcon,
-                },
+                  image: BlocIcon
+                }
               ]}
               description={
                 <p>
@@ -259,12 +286,12 @@ function ProjectsSection() {
               tags={[
                 {
                   text: "Flutter",
-                  image: FlutterIcon,
+                  image: FlutterIcon
                 },
                 {
                   text: "Bloc",
-                  image: BlocIcon,
-                },
+                  image: BlocIcon
+                }
               ]}
               description={
                 <p>
@@ -276,21 +303,20 @@ function ProjectsSection() {
 
             <ProjectItem
               image={UposAdminPicture}
-              url="https://play.google.com/store/apps/details?id=com.universalpos"
               title="uPOS admin"
               tags={[
                 {
                   text: "React",
-                  image: ReactIcon,
+                  image: ReactIcon
                 },
                 {
                   text: "Context",
-                  image: ReduxIcon,
+                  image: ReduxIcon
                 },
                 {
                   text: "SCSS",
-                  image: ScssIcon,
-                },
+                  image: ScssIcon
+                }
               ]}
               description={
                 <p>

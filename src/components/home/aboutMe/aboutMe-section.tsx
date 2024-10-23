@@ -23,7 +23,7 @@ function AboutMeSection() {
             of experience. App and web developer.{" "}
             <span className="green">Specialized</span> in{" "}
             <span className="green">
-              <strong>Flutter</strong> and <strong>React JS</strong>
+              <strong>React JS</strong> and <strong>Flutter</strong>
             </span>
             . Creator of <br />
             <span className="yellow">

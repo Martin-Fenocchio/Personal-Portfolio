@@ -10,7 +10,7 @@ function ExperienciesSection() {
       <h2>Experience</h2>
 
       <ExperienceItem
-        title="Flutter and React JS developer"
+        title="React JS and Flutter developer"
         company="LimboTeams"
         date="July 2021 - Present"
         url="https://limboteams.com"
