@@ -18,9 +18,9 @@ function AboutMeSection() {
           <p className="text-white">
             <span className="green">
               {" "}
-              <strong>+3 years</strong>
+              <strong>4 years</strong>
             </span>{" "}
-            of experience. App and web developer.{" "}
+            of experience. Web and app developer.{" "}
             <span className="green">Specialized</span> in{" "}
             <span className="green">
               <strong>React JS</strong> and <strong>Flutter</strong>
