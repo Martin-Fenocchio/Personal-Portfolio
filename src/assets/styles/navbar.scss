@@ -1,7 +1,7 @@
 @import "../styles/variables.scss";
 
 nav {
-  background-color: #ffffff2a;
+  background-color: #435065;
   border-radius: 0 0 20px 20px;
   left: 0;
   justify-content: center;
@@ -11,7 +11,7 @@ nav {
   right: 0;
   padding: 0.1rem 1rem;
   width: 100%;
-
+  z-index: 5;
   .flex {
     padding: 0 3rem;
     flex: 1;
@@ -43,6 +43,12 @@ nav {
 
     img {
       width: 1.6rem;
+    }
+  }
+
+  @media (max-width: 830px) {
+    .social-media {
+      display: none;
     }
   }
 }

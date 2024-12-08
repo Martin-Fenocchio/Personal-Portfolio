@@ -5,6 +5,8 @@ import EasyCopyPicture from "../../../assets/pictures/easycopy.webp";
 import LibraryItem from "./library-item";
 
 function LibrariesSection() {
+  const tParam = new URLSearchParams(window.location.search).get("t");
+
   return (
     <section
       id="libraries-section"
@@ -17,45 +19,49 @@ function LibrariesSection() {
         practical solutions.
       </p>
 
-      <LibraryItem
-        title="Universal Picture"
-        image={UniversalPicture}
-        url="https://pub.dev/packages/universal_picture"
-        description={
-          <p>
-            A versatile <strong>Flutter library</strong> for rendering images{" "}
-            <strong>regardless</strong> of their <strong>format</strong> or
-            source. This widget simplifies the process of loading and{" "}
-            <strong>displaying images</strong>.
-          </p>
-        }
-      />
-      <LibraryItem
-        title="Render If"
-        image={RenderIFPicture}
-        url="https://pub.dev/packages/renderif"
-        description={
-          <p>
-            RenderIf is a <strong>Flutter library</strong> designed to make your{" "}
-            <strong>development process faster</strong>. This library provides
-            an <strong>extra boolean parameter</strong>, for several common{" "}
-            <strong>Flutter widgets</strong>.
-          </p>
-        }
-      />
-      <LibraryItem
-        title="Simple copy"
-        image={EasyCopyPicture}
-        npmJSPackage
-        url="https://www.npmjs.com/package/@martin-fenocchio/simple_copy"
-        description={
-          <p>
-            This is a small npm library for <strong>copying text</strong> to the
-            <strong>clipboard</strong>. It's <strong>very simple to use</strong>{" "}
-            and works in <strong>web</strong> applications.
-          </p>
-        }
-      />
+      <div className={tParam == "f" ? "" : `flex flex-col-reverse`}>
+        <LibraryItem
+          title="Universal Picture"
+          image={UniversalPicture}
+          url="https://pub.dev/packages/universal_picture"
+          description={
+            <p>
+              A versatile <strong>Flutter library</strong> for rendering images{" "}
+              <strong>regardless</strong> of their <strong>format</strong> or
+              source. This widget simplifies the process of loading and{" "}
+              <strong>displaying images</strong>.
+            </p>
+          }
+        />
+        <LibraryItem
+          title="Render If"
+          image={RenderIFPicture}
+          url="https://pub.dev/packages/renderif"
+          description={
+            <p>
+              RenderIf is a <strong>Flutter library</strong> designed to make
+              your <strong>development process faster</strong>. This library
+              provides an <strong>extra boolean parameter</strong>, for several
+              common <strong>Flutter widgets</strong>.
+            </p>
+          }
+        />
+        <LibraryItem
+          title="Simple copy"
+          image={EasyCopyPicture}
+          npmJSPackage
+          url="https://www.npmjs.com/package/@martin-fenocchio/simple_copy"
+          description={
+            <p>
+              This is a small npm library for <strong>copying text</strong> to
+              the
+              <strong>clipboard</strong>. It's{" "}
+              <strong>very simple to use</strong> and works in{" "}
+              <strong>web</strong> applications.
+            </p>
+          }
+        />
+      </div>
     </section>
   );
 }

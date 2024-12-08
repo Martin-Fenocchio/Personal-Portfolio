@@ -12,7 +12,7 @@ interface ProjectItemProps {
 function ProjectItem(props: ProjectItemProps) {
   return (
     <a href={props.url} target="BLANK">
-      <article className="project-item">
+      <article className="project-item" data-has-url={props.url != null}>
         <img src={props.image} alt="project image" />
 
         <h3>{props.title}</h3>

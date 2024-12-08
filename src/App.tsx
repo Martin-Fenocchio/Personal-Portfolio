@@ -1,7 +1,10 @@
 import "./assets/styles/global.scss";
 import HomeScreen from "./screens/home/home-screen";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { RedirectionsToRapidamente } from "./utils/redirections/redirections-utils";
+import {
+  RedirectionsToBGRemover,
+  RedirectionsToRapidamente,
+} from "./utils/redirections/redirections-utils";
 
 function App() {
   return (
@@ -9,12 +12,16 @@ function App() {
       router={createBrowserRouter([
         {
           path: "/",
-          element: <HomeScreen />
+          element: <HomeScreen />,
         },
         {
           path: "/rapidamente",
-          element: <RedirectionsToRapidamente />
-        }
+          element: <RedirectionsToRapidamente />,
+        },
+        {
+          path: "/background-remover",
+          element: <RedirectionsToBGRemover />,
+        },
       ])}
     />
   );

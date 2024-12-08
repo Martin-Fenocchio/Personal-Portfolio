@@ -1,51 +1,70 @@
-@media (max-width: 431px) {
-  .gradient .about_me_section .width-container {
-    h1 {
-      font-size: 3.5rem;
-      line-height: 1.1;
-      margin-bottom: 0.5rem;
+@import "./variables.scss";
 
-      span {
-        display: block;
-        text-transform: capitalize;
-      }
-    }
+@media (max-width: 767px) {
+  .gradient .about_me_section {
+    position: relative;
+    .width-container {
+      h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
 
-    >p {
-      font-size: 1rem;
-      padding-right: 3rem;
-      margin-top: 2rem;
-    }
-
-    .grid-media {
-      flex-wrap: wrap;
-
-      .github {
-        flex: 0 1 30%;
-      }
-
-      .linkedin {
-        flex: 0 0 30%;
-
-        @media (max-width: 400px) {
-          p {
-
-            padding-right: 15px;
-          }
+        span {
+          display: block;
+          text-transform: capitalize;
         }
       }
 
-      a:last-child {
-        margin-top: 0.3rem;
-        flex: 0 0 80%;
+      > p {
+        font-size: 1rem;
+        padding-right: 3rem;
+        margin-top: 2rem;
+      }
+
+      .experience {
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .grid-media {
+    flex-wrap: wrap;
+
+    .linkedin {
+      @media (max-width: 400px) {
+        p {
+          padding-right: 15px;
+        }
       }
     }
 
-    .experience {
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+    a:last-child {
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+.grid-media {
+  .social-media-item {
+    p {
+      font-size: 14px;
+    }
+    min-width: 100px;
+
+    &:hover {
+      background-color: $green;
+      transform: scale(1.05);
+    }
+  }
+  .fenomartin6gmailcom {
+    min-width: 200px;
+    a {
+      min-width: none;
     }
   }
 }
