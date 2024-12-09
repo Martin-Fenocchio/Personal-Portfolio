@@ -2,6 +2,7 @@ import "../../../assets/styles/libraries.scss";
 import UniversalPicture from "../../../assets/pictures/universal.webp";
 import RenderIFPicture from "../../../assets/pictures/renderif.webp";
 import EasyCopyPicture from "../../../assets/pictures/easycopy.webp";
+import StringHelpersPicture from "../../../assets/pictures/stringhelpers.webp";
 import LibraryItem from "./library-item";
 
 function LibrariesSection() {
@@ -54,10 +55,21 @@ function LibrariesSection() {
           description={
             <p>
               This is a small npm library for <strong>copying text</strong> to
-              the
-              <strong>clipboard</strong>. It's{" "}
+              the <strong>clipboard</strong>. It's{" "}
               <strong>very simple to use</strong> and works in{" "}
               <strong>web</strong> applications.
+            </p>
+          }
+        />
+        <LibraryItem
+          title="String Helpers"
+          image={StringHelpersPicture}
+          npmJSPackage
+          url="https://www.npmjs.com/package/@martin-fenocchio/string-helpers"
+          description={
+            <p>
+              A <strong>lightweight</strong> library for{" "}
+              <strong>common string manipulation</strong> tasks 🧠.
             </p>
           }
         />
