@@ -9,6 +9,7 @@ function SocialMediaItem(props: Props) {
   return (
     <a
       onClick={props.onClick}
+      href={props.url}
       target="BLANK"
       className={props.text.toLowerCase().replace(".", "").replace("@", "")}
     >
