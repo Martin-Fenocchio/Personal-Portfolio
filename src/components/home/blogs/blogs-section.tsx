@@ -3,6 +3,7 @@ import BlogItem from "./blog-item";
 import Blog1Picture from "../../../assets/pictures/blog1.webp";
 import Blog2Picture from "../../../assets/pictures/blog2.webp";
 import Blog3Picture from "../../../assets/pictures/blog3.webp";
+import Blog4Picture from "../../../assets/pictures/blog4.webp";
 
 function BlogsSection() {
   return (
@@ -19,6 +20,19 @@ function BlogsSection() {
       </p>
 
       <BlogItem
+        image={Blog4Picture}
+        title="Understanding JavaScript Primitives and Reference Types in Depth"
+        url="https://medium.com/@martin_feno/understanding-javascript-primitives-and-reference-types-in-depth-ff63b4b5043a"
+        description={
+          <p>
+            JavaScript is a <strong>dynamic</strong> and{" "}
+            <strong>versatile</strong> language, but some of its quirks can be
+            puzzling — especially when it comes to how it handles
+            <strong>primitives</strong> and <strong>refecence</strong> types.
+          </p>
+        }
+      />
+      <BlogItem
         image={Blog1Picture}
         title="Boost Your Flutter App's Performance"
         url="https://medium.com/@martin_feno/boost-your-flutter-apps-performance-with-this-simple-script-55728bff4354"
@@ -31,18 +45,6 @@ function BlogsSection() {
         }
       />
       <BlogItem
-        image={Blog2Picture}
-        url="https://medium.com/@martin_feno/how-to-update-the-number-version-automatically-in-a-flutter-app-265ed5e3eee4"
-        title="Update the number version automatically in a Flutter app"
-        description={
-          <p>
-            In this blog I share a <strong>simple script coded</strong> by me to{" "}
-            <strong>increase</strong> the <strong>version number</strong> on{" "}
-            <strong>each commit</strong>, saving us time.
-          </p>
-        }
-      />
-      <BlogItem
         image={Blog3Picture}
         url="https://medium.com/@martin_feno/7-shortcuts-for-flutter-development-e1d4dba60708"
         title="7 Shortcuts to improve your productivity in flutter development"
@@ -51,6 +53,18 @@ function BlogsSection() {
             A <strong>collection</strong> of seven <strong>shortcuts</strong> of
             <strong>visual studio</strong> code to <strong>increase</strong>{" "}
             your <strong>productivity</strong> when you are coding!
+          </p>
+        }
+      />
+      <BlogItem
+        image={Blog2Picture}
+        url="https://medium.com/@martin_feno/how-to-update-the-number-version-automatically-in-a-flutter-app-265ed5e3eee4"
+        title="Update the number version automatically in a Flutter app"
+        description={
+          <p>
+            In this blog I share a <strong>simple script coded</strong> by me to{" "}
+            <strong>increase</strong> the <strong>version number</strong> on{" "}
+            <strong>each commit</strong>, saving us time.
           </p>
         }
       />
