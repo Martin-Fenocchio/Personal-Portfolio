@@ -205,6 +205,7 @@ const cuyProject = {
 const limboScanProject = {
   title: "LimboScan",
   image: LimboScanPicture,
+  url: "https://drive.google.com/file/d/1MtluhQuT3yBIjtrkAfPIBXnhfOgwKZry/view?usp=sharing",
   tags: [
     { text: "Flutter", image: FlutterIcon },
     { text: "Bloc", image: BlocIcon },
