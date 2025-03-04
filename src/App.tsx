@@ -5,25 +5,28 @@ import {
   RedirectionsToBGRemover,
   RedirectionsToRapidamente,
 } from "./utils/redirections/redirections-utils";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <RouterProvider
-      router={createBrowserRouter([
-        {
-          path: "/",
-          element: <HomeScreen />,
-        },
-        {
-          path: "/rapidamente",
-          element: <RedirectionsToRapidamente />,
-        },
-        {
-          path: "/background-remover",
-          element: <RedirectionsToBGRemover />,
-        },
-      ])}
-    />
+    <HelmetProvider>
+      <RouterProvider
+        router={createBrowserRouter([
+          {
+            path: "/",
+            element: <HomeScreen />,
+          },
+          {
+            path: "/rapidamente",
+            element: <RedirectionsToRapidamente />,
+          },
+          {
+            path: "/background-remover",
+            element: <RedirectionsToBGRemover />,
+          },
+        ])}
+      />
+    </HelmetProvider>
   );
 }
 
