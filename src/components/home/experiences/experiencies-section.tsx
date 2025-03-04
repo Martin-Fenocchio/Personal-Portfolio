@@ -12,6 +12,20 @@ function ExperienciesSection() {
       <h2>Experience</h2>
 
       <ExperienceItem
+        title="Software engineer"
+        company="Litebox"
+        date="July 2021 - Present"
+        url="https://litebox.ai"
+        description={
+          <p>
+            <strong>Fullstack developer</strong> in charge of developing{" "}
+            <strong>web applications</strong> and <strong>API</strong>'s for the
+            company's products, using <strong>React JS</strong> and{" "}
+            <strong>Node JS</strong>.
+          </p>
+        }
+      />
+      <ExperienceItem
         title={`${
           tParam == "f" ? "Flutter and React JS" : "React JS and Flutter"
         } developer`}
