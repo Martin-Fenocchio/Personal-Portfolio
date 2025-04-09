@@ -14,7 +14,7 @@ function ExperienciesSection() {
       <ExperienceItem
         title="Software engineer"
         company="Litebox"
-        date="July 2021 - Present"
+        date="Feb 2025 - Present"
         url="https://litebox.ai"
         description={
           <p>
