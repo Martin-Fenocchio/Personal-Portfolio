@@ -27,6 +27,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           source: "dist/**"
           target: "/home/ec2-user/deploy"
+          strip_components: 1
 
       - name: Move to Nginx and restart
         uses: appleboy/ssh-action@v1.0.0
