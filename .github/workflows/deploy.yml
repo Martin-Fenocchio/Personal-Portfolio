@@ -19,20 +19,22 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy via SSH
+      - name: Deploy via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           source: "dist/*"
-          target: ${{ secrets.EC2_TARGET_DIR }}
+          target: "/home/ec2-user/deploy"
 
-      - name: Restart Nginx
+      - name: Move to Nginx and restart
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           script: |
+            sudo rm -rf /usr/share/nginx/html/*
+            sudo cp -r /home/ec2-user/deploy/* /usr/share/nginx/html/
             sudo systemctl restart nginx
