@@ -16,7 +16,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: check env
+        run: echo ${{ secrets.VITE_IMAGES_URL }}
+
       - name: Build project
+        env:
+          VITE_IMAGES_URL: ${{ secrets.VITE_IMAGES_URL }}
         run: npm run build
 
       - name: Deploy via SCP
