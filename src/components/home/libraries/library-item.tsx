@@ -1,6 +1,7 @@
 import React from "react";
 import PubIcon from "../../../assets/icons/pub-dev.svg";
 import NPMIcon from "../../../assets/icons/npm.webp";
+import Image from "next/image";
 
 interface Props {
   title: string;
@@ -19,14 +20,14 @@ function LibraryItem({ npmJSPackage, ...props }: Props) {
           {props.description}
           <button>
             Ver en {npmJSPackage ? "NPM" : "PUB"}{" "}
-            <img
+            <Image
               src={npmJSPackage ? NPMIcon : PubIcon}
               alt="library platform icon"
             />
           </button>
         </div>
         <div className="right">
-          <img src={props.image} alt="library image" />
+          <Image src={props.image} alt="library image" />
         </div>
       </article>
     </a>

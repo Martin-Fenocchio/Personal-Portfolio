@@ -2,8 +2,6 @@ import ExperienceItem from "./experience-item";
 import "../../../assets/styles/experiences.scss";
 
 function ExperienciesSection() {
-  const tParam = new URLSearchParams(window.location.search).get("t");
-
   return (
     <section
       id="experience-section"
@@ -26,9 +24,7 @@ function ExperienciesSection() {
         }
       />
       <ExperienceItem
-        title={`${
-          tParam == "f" ? "Flutter and React JS" : "React JS and Flutter"
-        } developer`}
+        title={`${"React JS and Flutter"} developer`}
         company="LimboTeams"
         date="July 2021 - Present"
         url="https://limboteams.com"

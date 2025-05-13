@@ -10,20 +10,20 @@ import ReduxIcon from "../../assets/icons/redux.svg";
 import ScssIcon from "../../assets/icons/scss.svg";
 import TailwindIcon from "../../assets/icons/tailwind.svg";
 
-const MenteRapida = "rapidamente-vision.webp";
-const PokedexPicture = "pokedex-vision.webp";
-const StarWarsPicture = "starwars-vision.webp";
-const GuatapayPicture = "guatapay-vision.webp";
-const AdamoPicture = "adamo-vision.webp";
-const UposPicture = "upos-vision.webp";
-const LimboScanPicture = "limboscan-vision.webp";
-const CuyPicture = "cuy-vision.webp";
-const FMoneyPicture = "fmoney-vision.webp";
-const GuatapayWebPicture = "guatapay-web-vision.webp";
-const DarxprexWebPicture = "darxprex-web-vision.webp";
-const AdamoIDWebPicture = "adamo-web-vision.webp";
-const LimboXtractoPicture = "limboxtractor-vision.webp";
-const BGRemoverPicture = "bg-remover-vision.webp";
+import MenteRapida from "../../assets/pictures/projects/rapidamente-vision.webp";
+import PokedexPicture from "../../assets/pictures/projects/pokedex-vision.webp";
+import StarWarsPicture from "../../assets/pictures/projects/starwars-vision.webp";
+import GuatapayPicture from "../../assets/pictures/projects/guatapay-vision.webp";
+import AdamoPicture from "../../assets/pictures/projects/adamo-vision.webp";
+import UposPicture from "../../assets/pictures/projects/upos-vision.webp";
+import LimboScanPicture from "../../assets/pictures/projects/limboscan-vision.webp";
+import CuyPicture from "../../assets/pictures/projects/cuy-vision.webp";
+import FMoneyPicture from "../../assets/pictures/projects/fmoney-vision.webp";
+import GuatapayWebPicture from "../../assets/pictures/projects/guatapay-web-vision.webp";
+import DarxprexWebPicture from "../../assets/pictures/projects/darxprex-web-vision.webp";
+import AdamoIDWebPicture from "../../assets/pictures/projects/adamo-web-vision.webp";
+import LimboXtractoPicture from "../../assets/pictures/projects/limboxtractor-vision.webp";
+import BGRemoverPicture from "../../assets/pictures/projects/bg-remover-vision.webp";
 
 const menteRapidaProject = {
   title: "MenteRapida",

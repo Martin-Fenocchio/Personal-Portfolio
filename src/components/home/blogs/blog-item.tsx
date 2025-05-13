@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Props {
   title: string;
   description: React.ReactNode;
@@ -10,7 +12,7 @@ function BlogItem(props: Props) {
     <a href={props.url} target="BLANK">
       <article className="flex flex-row blog-item">
         <div className="picture">
-          <img src={props.image} alt="blog image" />
+          <Image src={props.image} alt="blog image" />
         </div>
         <div className="right">
           <h3>{props.title}</h3>

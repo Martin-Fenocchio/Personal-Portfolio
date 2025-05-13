@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export interface ITag {
   text: string;
   image: string;
@@ -6,7 +8,7 @@ export interface ITag {
 function TagItem(props: ITag) {
   return (
     <p className="tag-item">
-      {props.text} <img src={props.image} alt="tech icon" />
+      {props.text} <Image src={props.image} alt="tech icon" />
     </p>
   );
 }

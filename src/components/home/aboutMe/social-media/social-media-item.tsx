@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Props {
   text: string;
   url?: string;
@@ -13,8 +15,8 @@ function SocialMediaItem(props: Props) {
       target="BLANK"
       className={props.text.toLowerCase().replace(".", "").replace("@", "")}
     >
-      <div className="social-media-item hover flex border-[2px] border-green px-3 py-1 rounded-[15px]">
-        <img src={props.icon} alt="icon" className="mr-2" />
+      <div className="social-media-item hover flex border-[2px] border-green px-3 py-1 rounded-[15px] gap-1 justify-center">
+        <Image src={props.icon} alt="icon" className="mr-2" />
         <p className="text-white">{props.text}</p>
       </div>
     </a>

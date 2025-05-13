@@ -1,22 +1,13 @@
 import "../../../assets/styles/projects.scss";
-import {
-  projectsByDefaultOrder,
-  projectsByFlutterOrder,
-  projectsByReactOrder,
-} from "../../../utils/projects/projects-data";
+import { projectsByReactOrder } from "../../../utils/projects/projects-data";
 import ProjectItem from "./project-item";
 
 import { useState } from "react";
 
 function ProjectsSection() {
-  const tParam = new URLSearchParams(window.location.search).get("t");
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
-  const projects = !tParam
-    ? projectsByDefaultOrder
-    : tParam == "f"
-    ? projectsByFlutterOrder
-    : projectsByReactOrder;
+  const projects = projectsByReactOrder;
 
   return (
     <section
@@ -37,8 +28,8 @@ function ProjectsSection() {
       <div className="grid">
         {projects
           .slice(0, showMoreProjects ? projects.length : 4)
-          .map((project, index) => (
-            <ProjectItem {...project} key={index} />
+          .map((project) => (
+            <ProjectItem {...project} key={project.title} />
           ))}
       </div>
 

@@ -1,3 +1,5 @@
+"use client";
+
 import Arrow from "../../../assets/icons/arrow-down.svg";
 import Github from "../../../assets/icons/github.svg";
 import Linkedin from "../../../assets/icons/linkedin.svg";
@@ -5,24 +7,19 @@ import Email from "../../../assets/icons/email.svg";
 import SocialMediaItem from "./social-media/social-media-item";
 import "../../../assets/styles/about-me.scss";
 import Navbar from "../navbar/navbar";
-import BurgerMenu from "../../layout/burger-menu/burger-menu";
+import Image from "next/image";
 
 function AboutMeSection() {
-  const tParam = new URLSearchParams(window.location.search).get("t");
-
   return (
-    <section className="about-me-section relative h-full gradient">
-      <BurgerMenu />
+    <section className="about-me-section relative h-screen gradient">
       <Navbar />
 
-      <div className="h-[90%] about_me_section flex flex-column items-center  ">
+      <div className="h-[90%] about_me_section flex flex-column items-center">
         <div className="width-container">
           <h1 className="text-white">
             Hi, <span>I'm Martín.</span>
           </h1>
-          <h2 className="text-white">
-            {tParam == "f" ? "Flutter & React" : "React & Flutter"} dev
-          </h2>
+          <h2 className="text-white">React & Flutter dev</h2>
 
           <p className="text-white">
             <span className="green">
@@ -32,17 +29,10 @@ function AboutMeSection() {
             of experience. Web and app developer.{" "}
             <span className="green">Specialized</span> in{" "}
             <span className="green">
-              {tParam == "f" ? (
-                <>
-                  {" "}
-                  <strong>Flutter</strong> and <strong>React JS</strong>
-                </>
-              ) : (
-                <>
-                  {" "}
-                  <strong>React JS</strong> and <strong>Flutter</strong>
-                </>
-              )}
+              <>
+                {" "}
+                <strong>React JS</strong> and <strong>Flutter</strong>
+              </>
             </span>
             . Creator of <br />
             <span className="yellow">
@@ -73,7 +63,8 @@ function AboutMeSection() {
             href="#experience-section"
             className="experience flex items-center animate-bounce hover"
           >
-            Experience <img src={Arrow} alt="icon" className="w-10" />
+            Experience
+            <Image src={Arrow} alt="icon" className="w-10" />
           </a>
         </div>
       </div>

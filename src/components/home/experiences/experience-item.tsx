@@ -1,5 +1,6 @@
 import React from "react";
 import CalendarIcon from "../../../assets/icons/calendar.svg";
+import Image from "next/image";
 
 interface Props {
   title: string;
@@ -14,12 +15,12 @@ function ExperienceItem(props: Props) {
     <article className="max-w-content m-auto mb-12 experience-item">
       <div className="left flex flex-col items-center gap-4">
         <div className="calendar">
-          <img src={CalendarIcon} alt="calendar icon" />
+          <Image src={CalendarIcon} alt="calendar icon" />
         </div>
         <div className="yellow-line" />
       </div>
       <div className="right pb-2">
-        <h3 className="text-green font-bold">
+        <h3 className="text-[#0fff9a] font-bold">
           {props.title} <span className="separator px-1 text-white">-</span>{" "}
           <span className="company text-yellow ">{props.company}</span>
         </h3>

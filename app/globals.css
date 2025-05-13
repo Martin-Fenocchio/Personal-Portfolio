@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark-blue: #000428;
+  --color-medium-blue: #122441;
+  --color-background: #030228;
+  --color-dark-green: #00a872;
+  --color-yellow: #ffc01e;
+  --color-green: #0fff9a;
+  --spacing-content: 650px;
+}

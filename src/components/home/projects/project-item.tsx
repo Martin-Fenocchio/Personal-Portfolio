@@ -1,5 +1,6 @@
 import React from "react";
 import TagItem, { ITag } from "./tag-item";
+import Image from "next/image";
 
 interface ProjectItemProps {
   title: string;
@@ -10,22 +11,17 @@ interface ProjectItemProps {
 }
 
 function ProjectItem(props: ProjectItemProps) {
-  console.log("import.meta.env", import.meta.env);
-
   return (
     <a href={props.url} target="BLANK">
       <article className="project-item" data-has-url={props.url != null}>
-        <img
-          src={import.meta.env.VITE_IMAGES_URL + props.image}
-          alt="project image"
-        />
+        <Image src={props.image} alt="project image" />
 
         <h3>{props.title}</h3>
         {props.description}
 
         <footer>
           {props.tags.map((tag) => (
-            <TagItem {...tag} />
+            <TagItem {...tag} key={tag.text} />
           ))}
         </footer>
       </article>

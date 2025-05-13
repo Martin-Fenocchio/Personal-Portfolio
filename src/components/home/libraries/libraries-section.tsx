@@ -6,8 +6,6 @@ import StringHelpersPicture from "../../../assets/pictures/stringhelpers.webp";
 import LibraryItem from "./library-item";
 
 function LibrariesSection() {
-  const tParam = new URLSearchParams(window.location.search).get("t");
-
   return (
     <section
       id="libraries-section"
@@ -20,7 +18,7 @@ function LibrariesSection() {
         practical solutions.
       </p>
 
-      <div className={tParam == "f" ? "" : `flex flex-col-reverse`}>
+      <div className={`flex flex-col-reverse`}>
         <LibraryItem
           title="Universal Picture"
           image={UniversalPicture}

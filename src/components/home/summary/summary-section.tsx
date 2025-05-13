@@ -2,18 +2,18 @@ import Github from "../../../assets/icons/github.svg";
 import Linkedin from "../../../assets/icons/linkedin.svg";
 import Doc from "../../../assets/icons/doc.svg";
 import Email from "../../../assets/icons/email.svg";
-import CV from "../../../assets/files/Martin Fenocchio (i).pdf";
+//import CV from "../../../assets/files/Martin Fenocchio (i).pdf";
 import SocialMediaItem from "../aboutMe/social-media/social-media-item";
 import "../../../assets/styles/summary.scss";
 
 function SummarySection() {
   const handleDownloadCV = () => {
-    const link = document.createElement("a");
+    /*   const link = document.createElement("a");
     link.href = CV;
     link.download = "Martin_Fenocchio_CV.pdf";
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);
+    document.body.removeChild(link); */
   };
 
   return (
