@@ -11,10 +11,12 @@ interface ProjectItemProps {
 }
 
 function ProjectItem(props: ProjectItemProps) {
+  console.log("project", props.image);
+
   return (
     <a href={props.url} target="BLANK">
       <article className="project-item" data-has-url={props.url != null}>
-        <Image src={props.image} alt="project image" />
+        <Image src={props.image} alt="project image" width={500} height={300} />
 
         <h3>{props.title}</h3>
         {props.description}

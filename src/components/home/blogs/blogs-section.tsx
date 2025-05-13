@@ -1,9 +1,9 @@
 import "../../../assets/styles/blog.scss";
 import BlogItem from "./blog-item";
-import Blog1Picture from "../../../assets/pictures/blog1.webp";
-import Blog2Picture from "../../../assets/pictures/blog2.webp";
-import Blog3Picture from "../../../assets/pictures/blog3.webp";
-import Blog4Picture from "../../../assets/pictures/blog4.webp";
+const Blog1Picture = "/pictures/blog1.webp";
+const Blog2Picture = "/pictures/blog2.webp";
+const Blog3Picture = "/pictures/blog3.webp";
+const Blog4Picture = "/pictures/blog4.webp";
 
 function BlogsSection() {
   return (

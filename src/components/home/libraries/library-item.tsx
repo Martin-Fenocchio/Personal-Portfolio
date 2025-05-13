@@ -23,11 +23,17 @@ function LibraryItem({ npmJSPackage, ...props }: Props) {
             <Image
               src={npmJSPackage ? NPMIcon : PubIcon}
               alt="library platform icon"
+              width={30}
             />
           </button>
         </div>
         <div className="right">
-          <Image src={props.image} alt="library image" />
+          <Image
+            src={props.image}
+            alt="library image"
+            width={500}
+            height={400}
+          />
         </div>
       </article>
     </a>

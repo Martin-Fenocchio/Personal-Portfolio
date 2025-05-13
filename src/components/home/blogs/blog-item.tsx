@@ -12,7 +12,7 @@ function BlogItem(props: Props) {
     <a href={props.url} target="BLANK">
       <article className="flex flex-row blog-item">
         <div className="picture">
-          <Image src={props.image} alt="blog image" />
+          <Image src={props.image} alt="blog image" width={300} height={200} />
         </div>
         <div className="right">
           <h3>{props.title}</h3>

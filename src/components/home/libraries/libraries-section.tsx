@@ -1,8 +1,8 @@
 import "../../../assets/styles/libraries.scss";
-import UniversalPicture from "../../../assets/pictures/universal.webp";
-import RenderIFPicture from "../../../assets/pictures/renderif.webp";
-import EasyCopyPicture from "../../../assets/pictures/easycopy.webp";
-import StringHelpersPicture from "../../../assets/pictures/stringhelpers.webp";
+const UniversalPicture = "/pictures/universal.webp";
+const RenderIFPicture = "/pictures/renderif.webp";
+const EasyCopyPicture = "/pictures/easycopy.webp";
+const StringHelpersPicture = "/pictures/stringhelpers.webp";
 import LibraryItem from "./library-item";
 
 function LibrariesSection() {
