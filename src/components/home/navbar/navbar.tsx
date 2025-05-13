@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "../../../assets/styles/navbar.scss";
 import NavbarItems from "./item/navbar-items";
 import LinkedIn from "../../../assets/icons/linkedIn-yellow.svg";
@@ -9,7 +10,7 @@ interface Props {
   setMenuIsOpen?: Dispatch<React.SetStateAction<boolean>>;
 }
 
-function Navbar(props: Props) {
+function Navbar(_: Props) {
   return (
     <nav className="nav-bar flex  items-center">
       <h2 className="M">M</h2>
