@@ -10,20 +10,20 @@ import ReduxIcon from "../../assets/icons/redux.svg";
 import ScssIcon from "../../assets/icons/scss.svg";
 import TailwindIcon from "../../assets/icons/tailwind.svg";
 
-const MenteRapida = "/pictures/projects/rapidamente-vision.webp";
-const PokedexPicture = "/pictures/projects/pokedex-vision.webp";
-const StarWarsPicture = "/pictures/projects/starwars-vision.webp";
-const GuatapayPicture = "/pictures/projects/guatapay-vision.webp";
-const AdamoPicture = "/pictures/projects/adamo-vision.webp";
-const UposPicture = "/pictures/projects/upos-vision.webp";
-const LimboScanPicture = "/pictures/projects/limboscan-vision.webp";
-const CuyPicture = "/pictures/projects/cuy-vision.webp";
-const FMoneyPicture = "/pictures/projects/fmoney-vision.webp";
-const GuatapayWebPicture = "/pictures/projects/guatapay-web-vision.webp";
-const DarxprexWebPicture = "/pictures/projects/darxprex-web-vision.webp";
-const AdamoIDWebPicture = "/pictures/projects/adamo-web-vision.webp";
-const LimboXtractoPicture = "/pictures/projects/limboxtractor-vision.webp";
-const BGRemoverPicture = "/pictures/projects/bg-remover-vision.webp";
+import MenteRapida from "../../assets/projects/rapidamente-vision.webp";
+import PokedexPicture from "../../assets/projects/pokedex-vision.webp";
+import StarWarsPicture from "../../assets/projects/starwars-vision.webp";
+import GuatapayPicture from "../../assets/projects/guatapay-vision.webp";
+import AdamoPicture from "../../assets/projects/adamo-vision.webp";
+import UposPicture from "../../assets/projects/upos-vision.webp";
+import LimboScanPicture from "../../assets/projects/limboscan-vision.webp";
+import CuyPicture from "../../assets/projects/cuy-vision.webp";
+import FMoneyPicture from "../../assets/projects/fmoney-vision.webp";
+import GuatapayWebPicture from "../../assets/projects/guatapay-web-vision.webp";
+import DarxprexWebPicture from "../../assets/projects/darxprex-web-vision.webp";
+import AdamoIDWebPicture from "../../assets/projects/adamo-web-vision.webp";
+import LimboXtractoPicture from "../../assets/projects/limboxtractor-vision.webp";
+import BGRemoverPicture from "../../assets/projects/bg-remover-vision.webp";
 
 const menteRapidaProject = {
   title: "MenteRapida",
