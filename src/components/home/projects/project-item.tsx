@@ -1,10 +1,11 @@
 import React from "react";
 import TagItem, { ITag } from "./tag-item";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface ProjectItemProps {
   title: string;
-  image: StaticImageData;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  image: any;
   url?: string;
   tags: ITag[];
   description: React.ReactNode;
