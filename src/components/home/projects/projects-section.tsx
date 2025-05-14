@@ -1,3 +1,5 @@
+"use client";
+
 import "../../../assets/styles/projects.scss";
 import { projectsByReactOrder } from "../../../utils/projects/projects-data";
 import ProjectItem from "./project-item";
