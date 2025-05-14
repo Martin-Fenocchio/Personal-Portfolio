@@ -11,6 +11,7 @@ import ScssIcon from "../../assets/icons/scss.svg";
 import TailwindIcon from "../../assets/icons/tailwind.svg";
 
 import MenteRapida from "../../assets/projects/rapidamente-vision.webp";
+import DondeLaveo from "../../assets/projects/dondelaveo.png";
 import PokedexPicture from "../../assets/projects/pokedex-vision.webp";
 import StarWarsPicture from "../../assets/projects/starwars-vision.webp";
 import GuatapayPicture from "../../assets/projects/guatapay-vision.webp";
@@ -39,6 +40,22 @@ const menteRapidaProject = {
       A <strong>mini-game</strong> with a{" "}
       <strong>dailly mathematic challenge</strong>, similar to wordle and
       similars.
+    </p>
+  ),
+};
+
+const dondeLaVeoProject = {
+  title: "Donde La Veo",
+  image: DondeLaveo,
+  url: "/donde-la-veo",
+  tags: [
+    { text: "React", image: ReactIcon },
+    { text: "Tailwind", image: TailwindIcon },
+  ],
+  description: (
+    <p>
+      Find out in <strong>which app</strong> to <strong>watch</strong> your{" "}
+      <strong>movie</strong> or series easily.
     </p>
   ),
 };
@@ -287,6 +304,7 @@ export const projectsByFlutterOrder = [
 
 export const projectsByDefaultOrder = [
   menteRapidaProject,
+  dondeLaVeoProject,
   starWarsProject,
   bgRemoverProject,
   limboScanProject,
@@ -302,8 +320,9 @@ export const projectsByDefaultOrder = [
 
 export const projectsByReactOrder = [
   menteRapidaProject,
-  adamoWebProject,
   bgRemoverProject,
+  dondeLaVeoProject,
+  adamoWebProject,
   fmoneyProject,
   cuyProject,
   guatapayPlatformProject,
