@@ -9,10 +9,13 @@ import SummarySection from "../src/components/home/summary/summary-section";
 import { CanvasCursor } from "../src/utils/cn/cn";
 import { Metadata } from "next";
 
+const title = "Martín Fenocchio";
+const description =
+  "4 years of experience. Software Engineer. Specialized in React, Next, Nest and AWS. Creator of open source libraries and passionate about technology.";
+
 export const metadata: Metadata = {
-  title: "Martín Fenocchio",
-  description:
-    "4 years of experience. Software Engineer. Specialized in React JS and Flutter. Creator of open source libraries and passionate about technology.",
+  title,
+  description,
   icons: {
     icon: "/favicon.webp",
   },
@@ -20,12 +23,11 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://martinfenocchio.com",
     type: "website",
-    title: "Martín Fenocchio",
-    description:
-      "4 years of experience. Software Engineer. Specialized in React JS and Flutter. Creator of open source libraries and passionate about technology.",
+    title,
+    description,
     images: [
       {
-        url: "/og/dondelaveo.png",
+        url: "/og/portfolio.png",
       },
     ],
   },
