@@ -8,10 +8,11 @@ import BlogsSection from "../src/components/home/blogs/blogs-section";
 import SummarySection from "../src/components/home/summary/summary-section";
 import { CanvasCursor } from "../src/utils/cn/cn";
 import { Metadata } from "next";
+import { getYearsOfExperience } from "../src/utils/misc/misc.utils";
 
 const title = "Martín Fenocchio";
 const description =
-  "4 years of experience. Software Engineer. Specialized in React, Next, Nest and AWS. Creator of open source libraries and passionate about technology.";
+  `${getYearsOfExperience()} years of experience. Software Engineer. Specialized in React, Next, Nest and AWS. Creator of open source libraries and passionate about technology.`;
 
 export const metadata: Metadata = {
   title,
