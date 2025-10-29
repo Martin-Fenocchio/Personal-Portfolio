@@ -19,22 +19,30 @@ function AboutMeSection() {
           <h1 className="text-white">
             Hi, <span>I'm Martín.</span>
           </h1>
-          <h2 className="text-white">React & Flutter dev</h2>
+          <h2 className="text-white">Full-stack developer</h2>
 
           <p className="text-white">
             <span className="green">
               {" "}
               <strong>4 years</strong>
             </span>{" "}
-            of experience. Web and app developer.{" "}
-            <span className="green">Specialized</span> in{" "}
+            of experience. <span className="green">Full-stack developer</span> building{" "}
             <span className="green">
               <>
                 {" "}
-                <strong>React JS</strong> and <strong>Flutter</strong>
+                <strong>web</strong>
+              </>
+            </span> and 
+            <span className="green">
+              <>
+                {" "}
+               <strong>APIs</strong>
               </>
             </span>
-            . Creator of <br />
+            . Also experienced with <span className="yellow">
+              <strong>mobile</strong>
+            </span> development{" "}
+            and <span className="yellow">cloud</span> infrastructure. Creator of {" "}
             <span className="yellow">
               <strong>open source</strong> libraries
             </span>{" "}

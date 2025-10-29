@@ -26,3 +26,13 @@ export function RedirectionsToDondeLaVeo() {
 
   return <div></div>;
 }
+
+
+export function RedirectionsToMale() {
+  useEffect(() => {
+    window.location.href = "https://male-pi.vercel.app";
+  }, []);
+
+  return <div></div>;
+}
+

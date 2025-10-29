@@ -1,3 +1,5 @@
+import React from 'react'
+
 /* eslint-disable react-refresh/only-export-components */
 import { Metadata } from "next";
 import { RedirectionsToRapidamente } from "../../src/utils/redirections/redirections-utils";

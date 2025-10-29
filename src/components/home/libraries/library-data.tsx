@@ -8,6 +8,31 @@ export interface LibraryData {
 
 export const LIBRARIES_DATA: LibraryData[] = [
   {
+    title: "Tailwind Stack",
+    image: "/pictures/tailwind-stack.webp",
+    url: "https://www.npmjs.com/package/tailwind-stack",
+    npmJSPackage: true,
+    description: (
+      <p>
+        A plugin to stack multiple <strong>Tailwind utilities</strong> into a{" "}
+        <strong>single</strong> arbitrary class, with support for variants like
+        hover:, focus:, sm:, etc.
+      </p>
+    ),
+  },
+  {
+    title: "String Helpers",
+    image: "/pictures/stringhelpers.webp",
+    url: "https://www.npmjs.com/package/@martin-fenocchio/string-helpers",
+    npmJSPackage: true,
+    description: (
+      <p>
+        A <strong>lightweight</strong> library for{" "}
+        <strong>common string manipulation</strong> tasks 🧠.
+      </p>
+    ),
+  },
+  {
     title: "Universal Picture",
     image: "/pictures/universal.webp",
     url: "https://pub.dev/packages/universal_picture",
@@ -47,16 +72,5 @@ export const LIBRARIES_DATA: LibraryData[] = [
       </p>
     ),
   },
-  {
-    title: "String Helpers",
-    image: "/pictures/stringhelpers.webp",
-    url: "https://www.npmjs.com/package/@martin-fenocchio/string-helpers",
-    npmJSPackage: true,
-    description: (
-      <p>
-        A <strong>lightweight</strong> library for{" "}
-        <strong>common string manipulation</strong> tasks 🧠.
-      </p>
-    ),
-  },
+ 
 ];
