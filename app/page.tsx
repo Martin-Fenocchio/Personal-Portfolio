@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import React from "react";
 import AboutMeSection from "../src/components/home/aboutMe/aboutMe-section";
 import ExperienciesSection from "../src/components/home/experiences/experiencies-section";
 import ProjectsSection from "../src/components/home/projects/projects-section";

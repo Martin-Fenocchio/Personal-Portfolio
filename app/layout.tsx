@@ -1,4 +1,4 @@
-import React from "react";
+import type { ReactNode } from "react";
 import "./globals.css";
 import "../src/assets/styles/global.scss";
 import "../src/assets/styles/about-me.scss";
@@ -6,7 +6,7 @@ import "../src/assets/styles/about-me.scss";
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">

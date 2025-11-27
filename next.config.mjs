@@ -2,8 +2,9 @@
 const nextConfig = {
   distDir: "./dist",
   images: {
-    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
+  reactCompiler: true,
 };
 
 export default nextConfig;
