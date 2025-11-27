@@ -1,15 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import ArticleContent from "../../../src/components/blogs/article-content";
 import TableOfContents from "../../../src/components/blogs/table-of-contents";
-import ShareButtons from "../../../src/components/blogs/share-buttons";
 import ReadingProgress from "../../../src/components/blogs/reading-progress";
 import ScrollToTop from "../../../src/components/blogs/scroll-to-top";
-import Breadcrumbs from "../../../src/components/blogs/breadcrumbs";
 import RelatedArticles from "../../../src/components/blogs/related-articles";
 import AuthorSection from "../../../src/components/blogs/author-section";
+import ArticleHeader from "../../../src/components/blogs/article-header";
 import {
   getArticleBySlug,
   getArticleSlugs,
@@ -26,14 +24,6 @@ export async function generateStaticParams() {
     slug,
   }));
 }
-
-const formatDate = (date: Date): string => {
-  return new Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  }).format(date);
-};
 
 export async function generateMetadata({
   params,
@@ -92,42 +82,16 @@ const BlogArticlePage = async ({ params }: BlogArticlePageProps) => {
       <main className="max-w-7xl mx-auto px-4 py-4 lg:py-12">
         <article className="flex flex-col lg:flex-row">
           <div className="flex-1 lg:max-w-3xl">
-            <header className="mb-8">
-              <Breadcrumbs />
-              <h1 className="text-white text-4xl font-bold mb-4">
-                {article.title}
-              </h1>
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-                <div className="flex items-center gap-4 text-sm text-gray-400">
-                  <span>{article.author}</span>
-                  <span>•</span>
-                  <time dateTime={article.publicationDate.toISOString()}>
-                    {formatDate(article.publicationDate)}
-                  </time>
-                  <span>•</span>
-                  <span>{article.readingTime} min read</span>
-                </div>
-                <ShareButtons
-                  url={`https://martinfenocchio.com/blogs/${article.slug}`}
-                  title={article.title}
-                  description={article.metadata?.description || article.excerpt}
-                />
-              </div>
-              {article.featuredImage && (
-                <div className="relative w-full h-auto mb-8 rounded-lg overflow-hidden">
-                  <Image
-                    src={article.featuredImage}
-                    alt={article.title}
-                    width={1200}
-                    height={630}
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                    loading="eager"
-                    priority
-                  />
-                </div>
-              )}
-            </header>
+            <ArticleHeader
+              title={article.title}
+              author={article.author}
+              publicationDate={article.publicationDate}
+              readingTime={article.readingTime}
+              featuredImage={article.featuredImage}
+              slug={article.slug}
+              description={article.metadata?.description}
+              excerpt={article.excerpt}
+            />
             <ArticleContent
               content={article.content}
               headings={article.headings}
