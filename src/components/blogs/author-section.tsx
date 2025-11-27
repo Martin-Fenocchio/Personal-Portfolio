@@ -120,6 +120,7 @@ const AuthorSection = () => {
               alt={authorData.name}
               fill
               className="rounded-full object-cover border-2 border-green"
+              sizes="64px"
             />
           </div>
           <div className="flex-1 min-w-0">

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -121,6 +122,8 @@ const BlogArticlePage = async ({ params }: BlogArticlePageProps) => {
                     height={630}
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    loading="eager"
+                    priority
                   />
                 </div>
               )}

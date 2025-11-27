@@ -13,23 +13,55 @@ const ArticleContent = ({ content }: ArticleContentProps) => {
   const parsedContent = useMemo(() => {
     const options: HTMLReactParserOptions = {
       replace: (domNode) => {
-        if (domNode instanceof Element && domNode.name === "img") {
-          const { src, alt } = domNode.attribs;
-          if (!src) return domNode;
+        if (domNode instanceof Element) {
+          if (domNode.name === "p" && domNode.children) {
+            const hasImage = domNode.children.some(
+              (child) => child instanceof Element && child.name === "img"
+            );
+            if (hasImage) {
+              const imgNode = domNode.children.find(
+                (child) => child instanceof Element && child.name === "img"
+              ) as Element | undefined;
+              
+              if (imgNode) {
+                const { src, alt } = imgNode.attribs;
+                if (src) {
+                  return (
+                      <div className="relative w-full max-w-full">
+                        <Image
+                          src={src}
+                          alt={alt}
+                          width={1200}
+                          height={675}
+                          className="rounded-lg border object-contain w-full h-auto"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                          priority={false}
+                        />
+                      </div>
+                  );
+                }
+              }
+            }
+          }
+          
+          if (domNode.name === "img") {
+            const { src, alt } = domNode.attribs;
+            if (!src) return domNode;
 
-          return (
-              <div className="relative w-full max-w-full">
-                <Image
-                  src={src}
-                  alt={alt}
-                  width={1200}
-                  height={675}
-                  className="rounded-lg border object-contain w-full h-auto"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                  priority={false}
-                />
-              </div>
-          );
+            return (
+                <div className="relative w-full max-w-full">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    width={1200}
+                    height={675}
+                    className="rounded-lg border object-contain w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    priority={false}
+                  />
+                </div>
+            );
+          }
         }
         return domNode;
       },
