@@ -1,5 +1,5 @@
-"use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const AuthorSection = () => {
   const authorData = {
@@ -13,26 +13,6 @@ const AuthorSection = () => {
       github: "https://github.com/Martin-Fenocchio",
       email: "mailto:fenomartin6@gmail.com",
     },
-  };
-
-  const handleSocialClick = (url: string) => {
-    if (url.startsWith("mailto:")) {
-      // eslint-disable-next-line react-compiler/react-compiler
-      window.location.href = url;
-    } else {
-      // eslint-disable-next-line react-compiler/react-compiler
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
-  };
-
-  const handleKeyDown = (
-    event: React.KeyboardEvent<HTMLButtonElement>,
-    url: string
-  ) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      handleSocialClick(url);
-    }
   };
 
   const socialIcons = [
@@ -134,18 +114,22 @@ const AuthorSection = () => {
           {authorData.bio}
         </p>
         <div className="flex items-center gap-3 pt-3 border-t border-gray-700">
-          {socialIcons.map((social) => (
-            <button
-              key={social.key}
-              onClick={() => handleSocialClick(social.url)}
-              onKeyDown={(e) => handleKeyDown(e, social.url)}
-              tabIndex={0}
-              aria-label={social.ariaLabel}
-              className="p-2 bg-darkBlue rounded-lg hover:bg-green/20 transition-colors"
-            >
-              {social.icon}
-            </button>
-          ))}
+          {socialIcons.map((social) => {
+            const isEmail = social.url.startsWith("mailto:");
+
+            return (
+              <Link
+                key={social.key}
+                href={social.url}
+                target={isEmail ? undefined : "_blank"}
+                rel={isEmail ? undefined : "noopener noreferrer"}
+                aria-label={social.ariaLabel}
+                className="p-2 bg-darkBlue rounded-lg hover:bg-green/20 transition-colors"
+              >
+                {social.icon}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </aside>
