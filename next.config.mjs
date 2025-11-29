@@ -5,6 +5,10 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   reactCompiler: true,
+  productionBrowserSourceMaps: true,
+  experimental: {
+    serverSourceMaps: true,
+  },
 };
 
 export default nextConfig;

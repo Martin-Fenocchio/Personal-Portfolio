@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../src/assets/styles/global.scss";
 import "../src/assets/styles/about-me.scss";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -18,10 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script
-        async
+      <Script
+        strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=G-32TZ1BX014"
-      ></script>
+      />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-32TZ1BX014");
+          `}
+        </Script>
       <body>{children}</body>
     </html>
   );
