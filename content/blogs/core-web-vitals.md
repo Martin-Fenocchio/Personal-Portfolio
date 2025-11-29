@@ -2,7 +2,7 @@
 title: "What are the core web vitals"
 date: "2025-01-27"
 author: "Martín Fenocchio"
-featuredImage: "/blogs/cwv/cover.webp"
+featuredImage: "/blogs/cwv/cover.avif"
 excerpt: "Understanding the 3 most important metrics for website performance: LCP, INP, and CLS. Learn how to monitor and improve these metrics for better user experience and SEO."
 description: "A comprehensive guide to Core Web Vitals - the three most important performance metrics that Google uses to rank websites. Learn about Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS), and how to optimize them."
 keywords: ["core web vitals", "performance", "LCP", "INP", "CLS", "web development", "SEO", "web vitals", "page speed"]
@@ -21,7 +21,7 @@ As I mentioned before, the CWV are the **3 most important metrics** about the pe
 
 ## Largest Contentful Paint
 
-![Largest Contentful PaintExample](/blogs/cwv/lcp.webp)
+![Largest Contentful PaintExample](/blogs/cwv/lcp.avif)
 
 This metric measures **how long takes to the largest element on the page** to load, let's see an example:  
 
@@ -43,7 +43,7 @@ Just in case if your page has many possible candidates to be the largest Content
 
 ## Interaction to Next Paint (INP)
 
-![Interactio to Next Paint Example](/blogs/cwv/inp.webp)
+![Interactio to Next Paint Example](/blogs/cwv/inp.avif)
 
 
 **INP measures the responsiveness of your website**. More specifically, it tracks **how long it takes from the moment a user interacts with the page** (like clicking, tapping, or pressing a key) **until the next frame is painted**. In simpler words: **INP tells us how fast the UI reacts to the user's actions**.
@@ -66,7 +66,7 @@ Just open the Performance tab in DevTools and record an interaction. You will be
 
 ## Cumulative Layout Shift (CLS)
 
-![Cumulative Layout Shift Example](/blogs/cwv/cls.webp)
+![Cumulative Layout Shift Example](/blogs/cwv/cls.avif)
 
 **CLS measures how much elements on the screen move unexpectedly**. Users hate when the page **"jumps"** while they are reading or just about to click something. **CLS tracks exactly that — visual instability**.
 
