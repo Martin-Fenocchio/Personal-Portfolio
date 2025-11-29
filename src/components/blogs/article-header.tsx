@@ -52,7 +52,7 @@ const ArticleHeader = ({
         />
       </div>
       {featuredImage && (
-        <div className="relative w-full h-auto mb-8 rounded-lg overflow-hidden">
+        <div className="relative w-full aspect-[1200/630] mb-8 rounded-lg overflow-hidden">
           <Image
             src={featuredImage}
             alt={title}
@@ -60,8 +60,9 @@ const ArticleHeader = ({
             height={630}
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-            loading="eager"
+            fetchPriority="high"
             priority
+            quality={90}
           />
         </div>
       )}
