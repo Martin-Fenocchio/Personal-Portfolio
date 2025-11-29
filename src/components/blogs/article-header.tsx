@@ -59,10 +59,9 @@ const ArticleHeader = ({
             width={1200}
             height={630}
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+            sizes="(max-width: 768px) 100vw, 800px" 
             fetchPriority="high"
             priority
-            quality={90}
           />
         </div>
       )}
