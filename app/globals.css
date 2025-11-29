@@ -11,3 +11,24 @@
   --color-green: #0fff9a;
   --spacing-content: 650px;
 }
+
+/* Code syntax highlighting styles */
+.prose pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.prose pre {
+  overflow-x: auto;
+}
+
+.prose code {
+  font-size: 0.9em;
+}
+
+/* Ensure headings have anchor IDs for TOC navigation */
+.prose h2[id],
+.prose h3[id],
+.prose h4[id] {
+  scroll-margin-top: 2rem;
+}

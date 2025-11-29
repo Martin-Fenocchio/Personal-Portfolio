@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import React from "react";
 import { Metadata } from "next";
 import { RedirectionsToDondeLaVeo } from "../../src/utils/redirections/redirections-utils";
 
