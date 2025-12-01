@@ -30,6 +30,8 @@ const ArticleHeader = ({
   description,
   excerpt,
 }: ArticleHeaderProps) => {
+  console.log('featuredImage',featuredImage);
+  
   return (
     <header className="mb-8">
       <Breadcrumbs />
@@ -60,6 +62,11 @@ const ArticleHeader = ({
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 1200px"
             placeholder="blur"
+            blurDataURL={
+              typeof featuredImage !== "string" && featuredImage.blurDataURL
+                ? featuredImage.blurDataURL
+                : undefined
+            }
             fetchPriority="high"
             priority
           />
