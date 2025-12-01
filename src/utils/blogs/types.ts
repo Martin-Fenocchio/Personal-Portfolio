@@ -1,9 +1,11 @@
+import type { StaticImageData } from "next/image";
+
 export interface BlogArticle {
   slug: string;
   title: string;
   content: string;
   excerpt?: string;
-  featuredImage?: string;
+  featuredImage?: string | StaticImageData;
   author: string;
   publicationDate: Date;
   readingTime: number;

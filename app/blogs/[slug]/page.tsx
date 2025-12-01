@@ -39,7 +39,11 @@ export async function generateMetadata({
 
   const description =
     article.metadata?.description || article.excerpt || article.title;
-  const ogImage = article.metadata?.ogImage || article.featuredImage;
+  const ogImage =
+    article.metadata?.ogImage ||
+    (typeof article.featuredImage === "string"
+      ? article.featuredImage
+      : article.featuredImage?.src);
 
   return {
     title: `${article.title} | Martín Fenocchio`,

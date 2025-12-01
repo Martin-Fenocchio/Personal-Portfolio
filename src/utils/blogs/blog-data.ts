@@ -7,6 +7,7 @@ import {
   BlogArticleFrontmatter,
   ArticleMetadata,
 } from "./types";
+import { featuredImages } from "./featured-images";
 
 const BLOGS_DIRECTORY = path.join(process.cwd(), "content", "blogs");
 
@@ -54,14 +55,20 @@ const parseArticleFile = async (
     );
     const readingTime = calculateReadingTime(markdownContent);
 
+    const staticFeaturedImage = featuredImages[slug];
+    const featuredImage = staticFeaturedImage || frontmatterData.featuredImage;
+
+    const ogImage = frontmatterData.ogImage || 
+      (staticFeaturedImage ? staticFeaturedImage.src : frontmatterData.featuredImage);
+
     const metadata: ArticleMetadata | undefined = frontmatterData.description ||
       frontmatterData.keywords ||
-      frontmatterData.ogImage ||
+      ogImage ||
       frontmatterData.twitterCard
       ? {
           description: frontmatterData.description,
           keywords: frontmatterData.keywords,
-          ogImage: frontmatterData.ogImage || frontmatterData.featuredImage,
+          ogImage,
           twitterCard: frontmatterData.twitterCard || "summary_large_image",
         }
       : undefined;
@@ -71,7 +78,7 @@ const parseArticleFile = async (
       title: frontmatterData.title,
       content: htmlContent,
       excerpt: frontmatterData.excerpt,
-      featuredImage: frontmatterData.featuredImage,
+      featuredImage,
       author: frontmatterData.author || "Martín Fenocchio",
       publicationDate: new Date(frontmatterData.date),
       readingTime,

@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface BlogCardProps {
   title: string;
   excerpt?: string;
-  featuredImage?: string;
+  featuredImage?: string | StaticImageData;
   publicationDate: Date;
   readingTime: number;
   slug: string;

@@ -1,13 +1,12 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Breadcrumbs from "./breadcrumbs";
 import ShareButtons from "./share-buttons";
-
 interface ArticleHeaderProps {
   title: string;
   author: string;
   publicationDate: Date;
   readingTime: number;
-  featuredImage?: string;
+  featuredImage?: string | StaticImageData;
   slug: string;
   description?: string;
   excerpt?: string;
@@ -59,7 +58,8 @@ const ArticleHeader = ({
             width={1200}
             height={630}
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 1200px" 
+            sizes="(max-width: 768px) 100vw, 1200px"
+            placeholder="blur"
             fetchPriority="high"
             priority
           />
