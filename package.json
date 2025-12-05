@@ -19,7 +19,7 @@
     "framer-motion": "^12.23.24",
     "gray-matter": "^4.0.3",
     "html-react-parser": "^5.2.10",
-    "next": "^16.0.3",
+    "next": "^16.1.0-canary.12",
     "plaiceholder": "^3.0.0",
     "react": "^19.2.0",
     "react-burger-menu": "^3.0.9",
