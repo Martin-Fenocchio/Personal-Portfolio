@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import parse, { HTMLReactParserOptions, Element } from "html-react-parser";
 import { useMemo } from "react";
 
@@ -121,6 +122,52 @@ const ArticleContent = ({ content }: ArticleContentProps) => {
                   priority={false}
                 />
               </div>
+            );
+          }
+
+          if (domNode.name === "a") {
+            const { href } = domNode.attribs;
+            if (!href) return domNode;
+
+            const linkContent = domNode.children.map((child) => {
+              if (child.type === "text") {
+                return child.data;
+              }
+              if (child instanceof Element) {
+                return parse(
+                  `<${child.name}${Object.entries(child.attribs || {})
+                    .map(([key, value]) => ` ${key}="${value}"`)
+                    .join("")}>${child.children
+                    .map((c) => (c.type === "text" ? c.data : ""))
+                    .join("")}</${child.name}>`
+                );
+              }
+              return null;
+            });
+
+            const isExternal =
+              href.startsWith("http://") ||
+              href.startsWith("https://") ||
+              href.startsWith("mailto:") ||
+              href.startsWith("tel:");
+
+            if (isExternal) {
+              return (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={domNode.attribs?.class || ""}
+                >
+                  {linkContent}
+                </a>
+              );
+            }
+
+            return (
+              <Link href={href} className={domNode.attribs?.class || ""}>
+                {linkContent}
+              </Link>
             );
           }
 
