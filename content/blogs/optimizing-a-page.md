@@ -44,6 +44,8 @@ We can easily get the first load size opening the browser dev tools, going to th
 
 In the network tab, we can also know what files are included in the first load size (we should activate the source maps for easier detection)
 
+![How to see the first load size](/blogs/optimizing-page/network-tab.avif)
+
 ## Import dynamically
 
 When we have a big first load size, we need to optimize it, and a good way to do that in Next.js is to import some components dynamically.
@@ -67,6 +69,18 @@ Some common operations that can block the main thread are:
 - Using useLayoutEffect in ways that delay the initial paint
 - Doing synchronous data transformations on every render
 - Loading or decoding large images synchronously
+- Triggering heavy or complex animations that run on the main thread
+
+The `requestIdleCallback` function is a browser API that allows you to **schedule work to be performed during the browser's idle periods**, ensuring that your tasks don't interfere with the critical rendering and user input handling on the main thread.
+ 
+By deferring non-urgent or heavy computations—such as analytics, large JavaScript logic, or background data processing—using `requestIdleCallback`, you prevent these tasks from blocking the main thread and degrading the responsiveness of your page. This technique is particularly useful in Next.js applications to **keep the user experience smooth, ensuring that important UI elements** and interactions remain snappy and uninterrupted.
+
+
+```typescript
+requestIdleCallback(() => {
+  yourHeavyTask()
+});
+```
 
 ## Wrapping up
 
