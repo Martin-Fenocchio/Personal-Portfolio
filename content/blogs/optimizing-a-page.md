@@ -2,7 +2,7 @@
 title: "First steps to optimize a page"
 date: "2025-01-29"
 author: "Martín Fenocchio"
-featuredImage: "/blogs/optimzing-page/cover.avif"
+featuredImage: "/blogs/optimizing-page/cover.avif"
 excerpt: "Learn how to optimize your page performance by converting images, improving LCP, reducing first load size, using dynamic imports, and avoiding main thread blocking. Essential techniques for better Core Web Vitals."
 description: "A comprehensive guide to page optimization covering image conversion, LCP improvement, first load size reduction, dynamic imports, and main thread optimization techniques."
 keywords: ["performance", "optimization", "LCP", "first load", "dynamic imports", "main thread", "core web vitals", "web development"]
