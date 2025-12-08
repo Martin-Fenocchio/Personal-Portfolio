@@ -15,14 +15,14 @@ function Navbar(_: Props) {
     <nav className="nav-bar flex  items-center">
       <h2 className="M">M</h2>
 
-      <div className="flex">
-        <NavbarItems text="Projects" sectionID="#projects-section" />
-        <NavbarItems text="Experience" sectionID="#experience-section" />
+      <div className="flex gap-2 lg:px-12 min-h-[50px] items-center">
+        <NavbarItems text="Projects" sectionID="/#projects-section" />
+        <NavbarItems text="Experience" sectionID="/#experience-section" />
         <NavbarItems text="Blogs" sectionID="/blogs" />
-        <NavbarItems text="Libraries" sectionID="#libraries-section" />
+        <NavbarItems text="Libraries" sectionID="/#libraries-section" />
       </div>
 
-      <h2 className="M hide">M</h2>
+      <h2 className="max-md:hidden M hide">M</h2>
       {/* <h2 className="x-button" onClick={() => props.setMenuIsOpen?.(false)}>
         X
       </h2> */}
