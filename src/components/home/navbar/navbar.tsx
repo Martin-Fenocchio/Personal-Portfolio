@@ -18,7 +18,7 @@ function Navbar(_: Props) {
       <div className="flex">
         <NavbarItems text="Projects" sectionID="#projects-section" />
         <NavbarItems text="Experience" sectionID="#experience-section" />
-        <NavbarItems text="Blogs" sectionID="#blogs-section" />
+        <NavbarItems text="Blogs" sectionID="/blogs" />
         <NavbarItems text="Libraries" sectionID="#libraries-section" />
       </div>
 

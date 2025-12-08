@@ -1,8 +1,10 @@
 import "../../../assets/styles/blog.scss";
-import BlogItem from "./blog-item";
-import { BLOGS_DATA } from "./blog-data";
+import BlogListing from "../../blogs/blog-listing";
+import { getAllArticles } from "../../../utils/blogs/blog-data";
 
-function BlogsSection() {
+const BlogsSection = async () => {
+  const articles = await getAllArticles();
+
   return (
     <section
       id="blogs-section"
@@ -16,17 +18,9 @@ function BlogsSection() {
         interesting insights with fellow developers.
       </p>
 
-      {BLOGS_DATA.map((blog) => (
-        <BlogItem
-          key={`${blog.title}-${blog.url}`}
-          image={blog.image}
-          title={blog.title}
-          url={blog.url}
-          description={blog.description}
-        />
-      ))}
+      <BlogListing articles={articles} gridCols={"lg:grid-cols-1"} />
     </section>
   );
-}
+};
 
 export default BlogsSection;

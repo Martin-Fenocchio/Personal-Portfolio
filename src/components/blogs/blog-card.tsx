@@ -50,7 +50,7 @@ const BlogCard = ({
     >
       <article className="flex flex-col border-2 border-mediumBlue rounded-xl bg-mediumBlue p-4 transition-transform duration-200 h-full">
         {featuredImage && (
-          <div className="relative w-full h-[240px] mb-4 rounded-lg overflow-hidden">
+          <div className="relative w-full aspect-video mb-4 rounded-lg overflow-hidden">
             <Image
               src={featuredImage}
               alt={title}

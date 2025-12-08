@@ -5,9 +5,10 @@ import BlogCard from "./blog-card";
 
 interface BlogListingProps {
   articles: BlogArticle[];
+  gridCols: string;
 }
 
-const BlogListing = ({ articles }: BlogListingProps) => {
+const BlogListing = ({ articles, gridCols }: BlogListingProps) => {
   if (articles.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
@@ -21,7 +22,7 @@ const BlogListing = ({ articles }: BlogListingProps) => {
 
   return (
     <section className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${gridCols}`}>
         {articles.map((article) => (
           <BlogCard
             key={article.slug}

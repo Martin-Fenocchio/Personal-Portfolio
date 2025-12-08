@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface Props {
   text: string;
   sectionID: string;
@@ -5,9 +7,9 @@ interface Props {
 
 function NavbarItems(props: Props) {
   return (
-    <a href={props.sectionID}>
+    <Link href={props.sectionID}>
       <div className="navbar-item hover ">{props.text}</div>
-    </a>
+    </Link>
   );
 }
 

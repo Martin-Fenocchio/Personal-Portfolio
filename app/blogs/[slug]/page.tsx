@@ -78,7 +78,7 @@ const BlogArticlePage = async ({ params }: BlogArticlePageProps) => {
     notFound();
   }
 
-  const relatedArticles = await getRelatedArticles(slug, 2);
+  const relatedArticles = await getRelatedArticles(slug, 4);
 
   return (
     <div className="min-h-screen bg-background">
