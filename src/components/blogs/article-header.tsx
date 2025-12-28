@@ -1,5 +1,4 @@
 import Image, { type StaticImageData } from "next/image";
-import Breadcrumbs from "./breadcrumbs";
 import ShareButtons from "./share-buttons";
 interface ArticleHeaderProps {
   title: string;
@@ -34,7 +33,6 @@ const ArticleHeader = ({
   
   return (
     <header className="mb-8">
-      <Breadcrumbs />
       <h1 className="text-white text-4xl font-bold mb-4">{title}</h1>
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <div className="flex items-center gap-4 text-sm text-gray-400">
