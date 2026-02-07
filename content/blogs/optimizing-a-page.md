@@ -7,6 +7,7 @@ excerpt: "Learn how to optimize your page performance by converting images, impr
 description: "A comprehensive guide to page optimization covering image conversion, LCP improvement, first load size reduction, dynamic imports, and main thread optimization techniques."
 keywords: ["performance", "optimization", "LCP", "first load", "dynamic imports", "main thread", "core web vitals", "web development"]
 tags: ["performance", "optimization"]
+order: 3
 ---
 ## Introduction
 

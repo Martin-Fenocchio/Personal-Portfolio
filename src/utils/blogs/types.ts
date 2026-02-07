@@ -12,6 +12,7 @@ export interface BlogArticle {
   headings: ArticleSection[];
   metadata?: ArticleMetadata;
   tags?: string[];
+  order?: number;
 }
 
 export interface ArticleSection {
@@ -40,5 +41,6 @@ export interface BlogArticleFrontmatter {
   ogImage?: string;
   twitterCard?: string;
   tags?: string[];
+  order?: number;
 }
 

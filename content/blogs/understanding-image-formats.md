@@ -7,6 +7,7 @@ excerpt: "Learn how to choose the right image format for your web projects. Disc
 description: "A comprehensive guide to image formats for web development. Learn about raster vs vector graphics, and when to use SVG, JPEG, PNG, WebP, and AVIF formats to optimize your website's performance and improve Core Web Vitals."
 keywords: ["image formats", "webp", "avif", "svg", "png", "jpeg", "web development", "performance", "optimization", "core web vitals"]
 tags: ["web development", "performance", "optimization"]
+order: 2
 ---
 
 # Developer Guide to Image Formats

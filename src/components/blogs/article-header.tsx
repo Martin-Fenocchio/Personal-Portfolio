@@ -29,8 +29,8 @@ const ArticleHeader = ({
   description,
   excerpt,
 }: ArticleHeaderProps) => {
-  console.log('featuredImage',featuredImage);
-  
+  const hasBlurImage = typeof featuredImage !== "string" && featuredImage.blurDataURL;
+
   return (
     <header className="mb-8">
       <h1 className="text-white text-4xl font-bold mb-4">{title}</h1>
@@ -59,9 +59,9 @@ const ArticleHeader = ({
             height={630}
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 1200px"
-            placeholder="blur"
+            placeholder={hasBlurImage ? "blur" : undefined}
             blurDataURL={
-              typeof featuredImage !== "string" && featuredImage.blurDataURL
+             hasBlurImage
                 ? featuredImage.blurDataURL
                 : undefined
             }

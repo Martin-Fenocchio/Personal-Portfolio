@@ -39,9 +39,13 @@ const BlogCard = ({
     }
   };
 
+  console.log('featuredImage',featuredImage);
+  
+
   return (
     <Link
       href={`/blogs/${slug}`}
+      target="_blank"
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       tabIndex={0}

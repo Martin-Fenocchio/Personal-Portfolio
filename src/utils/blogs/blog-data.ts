@@ -85,6 +85,7 @@ const parseArticleFile = async (
       headings,
       metadata,
       tags: frontmatterData.tags,
+      order: frontmatterData.order,
     };
   } catch (error) {
     console.error(`Error parsing article file ${filename}:`, error);
@@ -110,9 +111,22 @@ export const getAllArticles = async (): Promise<BlogArticle[]> => {
     );
 
     return validArticles.sort((a, b) => {
-      return (
-        b.publicationDate.getTime() - a.publicationDate.getTime()
-      );
+      const aHasOrder = a.order !== undefined;
+      const bHasOrder = b.order !== undefined;
+      
+      // Both have order: sort by order ascending
+      if (aHasOrder && bHasOrder) {
+        return a.order! - b.order!;
+      }
+      
+      // Only a has order: a comes first
+      if (aHasOrder) return -1;
+      
+      // Only b has order: b comes first
+      if (bHasOrder) return 1;
+      
+      // Neither has order: sort by date descending
+      return b.publicationDate.getTime() - a.publicationDate.getTime();
     });
   } catch (error) {
     console.error("Error reading blog articles:", error);

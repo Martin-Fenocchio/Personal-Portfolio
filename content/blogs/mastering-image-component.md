@@ -7,6 +7,7 @@ excerpt: "Learn how to optimize images in Next.js using the built-in Image compo
 description: "A comprehensive guide to Next.js Image component. Learn how to use quality, priority, sizes, placeholder, and dimension props to optimize images and improve your website's performance metrics and Core Web Vitals."
 keywords: ["next.js", "image optimization", "Image component", "performance", "web development", "core web vitals", "LCP", "layout shift"]
 tags: ["next.js", "performance", "optimization"]
+order: 5
 ---
 
 # Mastering <Image/>

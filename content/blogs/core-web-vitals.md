@@ -7,6 +7,7 @@ excerpt: "Understanding the 3 most important metrics for website performance: LC
 description: "A comprehensive guide to Core Web Vitals - the three most important performance metrics that Google uses to rank websites. Learn about Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS), and how to optimize them."
 keywords: ["core web vitals", "performance", "LCP", "INP", "CLS", "web development", "SEO", "web vitals", "page speed"]
 tags: ["performance", "web vitals", "SEO"]
+order: 6
 ---
 
 # Core web vitals
