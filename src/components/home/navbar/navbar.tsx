@@ -5,6 +5,7 @@ import LinkedIn from "../../../assets/icons/linkedIn-yellow.svg";
 import Github from "../../../assets/icons/github-yellow.svg";
 import { Dispatch } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   setMenuIsOpen?: Dispatch<React.SetStateAction<boolean>>;
@@ -13,7 +14,9 @@ interface Props {
 function Navbar(_: Props) {
   return (
     <nav className="nav-bar flex  items-center">
-      <h2 className="M">M</h2>
+      <Link href="/">
+        <h2 className="M">M</h2>
+      </Link>
 
       <div className="flex gap-2 lg:px-12 min-h-[50px] items-center">
         <NavbarItems text="Projects" sectionID="/#projects-section" />
