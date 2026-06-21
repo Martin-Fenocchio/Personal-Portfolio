@@ -8,8 +8,11 @@ import SocialMediaItem from "./social-media/social-media-item";
 import "../../../assets/styles/about-me.scss";
 import Navbar from "../navbar/navbar";
 import Image from "next/image";
+import { getYearsOfExperienceLabel } from "../../../utils/experience/experience-years";
 
 function AboutMeSection() {
+  const yearsOfExperience = getYearsOfExperienceLabel();
+
   return (
     <section className="about-me-section relative h-screen gradient">
       <Navbar />
@@ -19,14 +22,14 @@ function AboutMeSection() {
           <h1 className="text-white">
             Hi, <span>I'm Martín.</span>
           </h1>
-          <h2 className="text-white">Full-stack developer</h2>
+          <h2 className="text-white">Tech Lead</h2>
 
           <p className="text-white">
             <span className="green">
               {" "}
-              <strong>4 years</strong>
+              <strong>{yearsOfExperience} years</strong>
             </span>{" "}
-            of experience. <span className="green">Full-stack developer</span> building{" "}
+            of experience. <span className="green">Tech Lead</span> and full-stack developer building{" "}
             <span className="green">
               <>
                 {" "}
@@ -39,10 +42,10 @@ function AboutMeSection() {
                <strong>APIs</strong>
               </>
             </span>
-            . Also experienced with <span className="yellow">
+            . I lead teams and technical decisions with a product-focused mindset, also experienced with <span className="yellow">
               <strong>mobile</strong>
             </span> development{" "}
-            and <span className="yellow">cloud</span> infrastructure. Creator of {" "}
+            and <span className="yellow">cloud</span> infrastructure. Passionate about <span className="yellow">AI</span>, automations, creator of {" "}
             <span className="yellow">
               <strong>open source</strong> libraries
             </span>{" "}

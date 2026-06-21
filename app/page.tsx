@@ -7,12 +7,14 @@ import BlogsSection from "../src/components/home/blogs/blogs-section";
 import SummarySection from "../src/components/home/summary/summary-section";
 import { CanvasCursor } from "../src/utils/cn/cn";
 import { Metadata } from "next";
+import { getYearsOfExperienceLabel } from "../src/utils/experience/experience-years";
 
 const title = "Martín Fenocchio";
+const yearsOfExperience = getYearsOfExperienceLabel();
 const description =
-  "4 years of experience. App and web developer. Specialized in React JS and Flutter. Creator of open source libraries and passionate about technology.";
+  `Tech Lead and full-stack developer with ${yearsOfExperience} years of experience. Specialized in JavaScript, Next.js, React, APIs, AI adoption, and technical leadership.`;
 const ogDescription =
-  "4 years of experience. Web and App developer. Specialized in React JS and Flutter. Creator of open source libraries and passionate about technology.";
+  `Tech Lead and full-stack developer with ${yearsOfExperience} years of experience. Specialized in JavaScript, Next.js, React, APIs, AI adoption, and technical leadership.`;
 
 export const metadata: Metadata = {
   title,

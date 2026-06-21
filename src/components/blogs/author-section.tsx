@@ -4,8 +4,8 @@ import Link from "next/link";
 const AuthorSection = () => {
   const authorData = {
     name: "Martín Fenocchio",
-    role: "Full Stack Developer",
-    bio: "Passionate about web development, performance optimization, and creating great user experiences.",
+    role: "Tech Lead",
+    bio: "Tech Lead and full-stack developer focused on JavaScript, scalable products, AI adoption, automations, and strong user experiences.",
     image: "/images/avatar.webp",
     socialLinks: {
       twitter: "https://twitter.com/martinfenocchio",
